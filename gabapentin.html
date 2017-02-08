@@ -1,0 +1,2999 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]>              <html lang="en" class=" no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9 ]>                 <html lang="en" class=" no-js lt-ie10"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class=" no-js"> <!--<![endif]-->
+<head>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"3ee98a9739","applicationID":"58764","transactionName":"cglXQEANXllVExdAE1QHTVlXDEZGHxJQWxY=","queueTime":0,"applicationTime":238,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Vg4GV0VWAAQGUA=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),s.xhrWrappable&&t(9),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),c=t(7),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(17)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),c=t(16),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!l.aborted){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function p(t,e){v[t]=h(t).concat(e)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var v={},y={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(15),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(15),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(12);var w=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},y=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:w,features:{},xhrWrappable:y};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,10,4,3]);</script>
+<title>Gabapentin report for  patients like you</title>
+<meta charset="UTF-8">
+<meta content="Gabapentin: Find the most comprehensive real-world treatment information on Gabapentin at PatientsLikeMe. 5151 patients with Fibromyalgia, Multiple Sclerosis, Major Depressive Disorder, Generalized Anxiety Disorder, Systemic Lupus Erythematosus, Diabetes Type 2, Post-traumatic stress disorder, Parkinson's Disease, Panic Disorder, Bipolar Disorder, Myalgic Encephalomyelitis/Chronic Fatigue Syndrome, Epilepsy, ALS (Amyotrophic Lateral Sclerosis), Persistent depressive disorder (dysthymia), Rheumatoid Arthritis (RA), Hypertension, Migraine, Hypothyroidism, Asthma, Traumatic Brain Injury, Social Anxiety Disorder, Idiopathic Pulmonary Fibrosis, Osteoarthritis, Psoriasis, ADHD (Attention Deficit/Hyperactivity Disorder), IBS (Irritable Bowel Syndrome), Bipolar II Disorder, HIV (Human Immunodeficiency Virus), GERD (Gastroesophageal reflux disease) or Mild Depression currently take Gabapentin." name="description">
+<meta content="8scufJGxU9JCHew1yOlfXYXtd73pybYP2xyel8v3GjQ" name="google-site-verification">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="PatientsLikeMe" name="application-name">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="//dy82vckl8b34w.cloudfront.net/assets/favicon/favicon-apple-touch-icon-41b50cd6195543c61dfdb126c144ed54.png" rel="apple-touch-icon-precomposed">
+<meta content="#2C5FAA" name="msapplication-TileColor">
+<meta content="//dy82vckl8b34w.cloudfront.net/assets/favicon/favicon-metro-tile-icon-075b5732774f351c1c3d5cb76486a4de.png" name="msapplication-TileImage">
+
+<link href="//dy82vckl8b34w.cloudfront.net/assets/patientslikeme_facebook_icon-11068346ce83d43cdf84e2da0d5a1c3d.png" rel="image_src" type="image/png">
+<link href="http://www.patientslikeme.com/treatments/show/279-gabapentin-side-effects-and-efficacy" rel="canonical">
+<script>
+  window.queued_functions = [];
+  window.$ = function(f) {
+    if (typeof f === 'function') {
+      return window.queued_functions.push(f);
+    } else {
+      throw "jQuery is not loaded";
+    }
+  };
+</script>
+<link rel="stylesheet" media="screen,print" href="//dy82vckl8b34w.cloudfront.net/assets/application-07b5d9510b232921651f3d2895292ae9.css" />
+<link rel="stylesheet" media="screen,print" href="//dy82vckl8b34w.cloudfront.net/assets/nugget-4e2900c03ad8a05ff465904957312593.css" />
+<!--[if IE 9]>
+<link rel="stylesheet" media="screen" href="//dy82vckl8b34w.cloudfront.net/assets/ie9-090524fb60fbc637b9246ee80cd49a6c.css" />
+<![endif]-->
+
+
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="uRgoIX8+o9sYO9cBXm7BKPdXdr5X3SDGEWklyAvMWTxhW7y7cpW6D2RucGq7956andokTt1txhaRq5Uylthe+Q==" />
+
+</head>
+<body class="plm plm-treatments public-page" data-current-user="null" id="pg-show" lang="en">
+<a id="top"></a>
+<div class="bg-plm-website min-full-height nav-is-horizontal site-outer-wrapper">
+
+<div class="is-hidden-visually" id="skip-links">
+<a id="top"></a>
+<a href="#startcontent">Skip over navigation</a>
+</div>
+<header class="header-banner" role="banner">
+<noscript>
+<div class="row">
+<div class="columns large-24 medium-24 small-centered island-object">
+<div class="flag-object flash-message warning" role="alert"><div class="flag-content">You appear to have JavaScript disabled in your browser.
+PatientsLikeMe relies on JavaScript and Cookies to deliver the best possible experience to you.
+<a href="http://support.patientslikeme.com/hc/en-us/articles/201187414">How do I enable JavaScript?<img class="dingbat-icon" src="//dy82vckl8b34w.cloudfront.net/assets/information-f7b4ffe067bd98590b3f7842aaafb222.png" alt="Information" /></a>
+</div><span class="flash-message-icon"></span></div></div>
+</div>
+</noscript>
+
+<div class="row hide-for-tablet">
+<div class="columns large-8 medium-8">
+<a class="inline-block" title="Return to the Home Page" href="/"><div class="site-logo">
+<div class="is-hidden-visually">
+PatientsLikeMe ®
+</div>
+<div class="icon icon-plm-logo"></div>
+</div>
+</a>
+</div>
+<div class="columns medium-8"></div>
+<div class="columns medium-8 entry-point">
+<div class="join-wrapper">
+<a class="no-double-click button button-primary-action join-button-lg large-control join-link-js" data-initialize="add_click_metric" data-metric-event-args="[&quot;nav.header.clicked_join&quot;]" href="/users/sign_up">Join now! <small>(It’s free)</small></a>
+<p class="align-right-medium">
+Already a member?
+<a class="nobr" href="/users/sign_in">Sign in</a>
+</p>
+</div>
+</div>
+</div>
+<nav class="main-nav row">
+<ul class="nav tabs hide-for-tablet pull-left" role="navigation">
+<li><a class="main-nav-item tab-plain" href="/patients">
+<span class="main-nav-icon icon icon-spacer icon-people"></span>Patients</a></li>
+<li><a class="main-nav-item tab-plain" href="/conditions">
+<span class="main-nav-icon icon icon-spacer icon-conditions"></span>Conditions</a></li>
+<li class="yah"><a class="main-nav-item yah" href="/treatments">
+<span class="main-nav-icon icon icon-spacer icon-treatments">(You Are Here)</span>Treatments</a></li>
+<li><a class="main-nav-item tab-plain" href="/symptoms">
+<span class="main-nav-icon icon icon-spacer icon-symptoms"></span>Symptoms</a></li>
+<li><a class="main-nav-item tab-plain" href="/research">
+<span class="main-nav-icon icon icon-spacer icon-research"></span>Research</a></li>
+
+</ul>
+<div class="nav-toggle show-for-tablet mobile-nav has-shadow-bottom">
+<div class="has-shadow-bottom position-relative" style="z-index: 1">
+<div class="row collapse">
+<div class="columns small-14">
+<div class="media-object">
+<div class="media-item"><button name="button" type="submit" class="button-link menu-opener mobile-nav-item toggle-nav toggle-nav-js">Menu</button></div>
+<div class="media-content"><a class="logo-mobile-display" href="/"><img alt="PatientsLikeMe ®" class="align-middle" src="//dy82vckl8b34w.cloudfront.net/assets/icons-svg/icon-plm-logo-7cdb6ac373bb8abc8aa238409f5f0ac3.svg" /></a></div>
+</div>
+</div>
+<div class="columns small-10">
+<div class="float-right padding-half">
+<a class="outlined-join-button join-link-js join-link-js" href="/users/sign_up">Join now</a>
+</div>
+</div>
+</div>
+</div>
+<div class="mega-nav" style="visibility: hidden">
+<div class="mega-nav-items">
+<div class="nav-layout">
+<div class="search-wrapper" role="search"><form id="site-search-form-517" class="search-wrapper" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<input type="hidden" name="cx" id="cx" value="012580686871807717921:mf0ormpzdl4" />
+<input type="hidden" name="ie" id="ie" value="UTF-8" />
+<label class="acc-label is-hidden-visually" for="site-search-input-883">Search this site</label>
+<input type="search" name="q" id="site-search-input-883" placeholder="Search PatientsLikeMe" class="main-site-search  " />
+<button class="button icon-only search-button" name="sa">
+<span class="icon icon-search"></span>
+</button>
+</form>
+
+</div>
+</div>
+<nav class="secondary-nav" role="navigation">
+<dl data-widget="accordion_menu">
+<dd><a class="nav-item join-link-js" href="/users/sign_up">Join now</a></dd>
+<dd><a class="nav-item" href="/users/sign_in">Sign in</a></dd>
+<dd><a data-match="/patients" class="nav-item" href="/patients">Patients</a></dd>
+<dt aria-expanded="false" class="panel-toggle conditions closed"><a class="nav-item" data-fn-click="accordion_menu.toggle" href="#">Conditions</a></dt><dd style="display: none" aria-hidden="true"><div class="condition-selector-widget hide-in-main-nav-for-medium-down">
+<ul class="condition-filter-menu-js" data-popup-type="menu">
+</ul>
+<div class="nav-item mega-nav-sub-item">
+<div class="search-wrapper">
+<label class="is-hidden-visually" for="condition_search_input">Search conditions</label>
+<input type="search" id="" class="has-max-width" placeholder="Look up a condition" data-fn-autocompleteselect="open_report_page" data-types="[&quot;Condition&quot;]" data-widget="omni_picker" data-fn-focusin="omni_picker.initialize" />
+</div>
+</div>
+</div>
+
+</dd><dd><a data-match="/treatments" class="nav-item" href="/treatments">Treatments</a></dd>
+<dd><a data-match="/symptoms" class="nav-item" href="/symptoms">Symptoms</a></dd>
+<dt aria-expanded="false" class="panel-toggle research closed"><a class="nav-item" data-fn-click="accordion_menu.toggle" href="#">Research</a></dt><dd style="display: none" aria-hidden="true"><ul>
+<li data-match="/dataforgood"><a class="nav-item" href="/research/dataforgood">Data for good</a></li>
+<li data-match="/research/publications"><a class="nav-item" href="/research/publications">Publications &amp; talks</a></li>
+<li data-match="/research/team"><a class="nav-item" href="/research/team">Research team</a></li>
+</ul>
+</dd><dt aria-expanded="false" class="panel-toggle about closed"><a class="nav-item" data-fn-click="accordion_menu.toggle" href="#">About PatientsLikeMe</a></dt><dd style="display: none" aria-hidden="true"><ul>
+<li data-match="/about$"><a class="nav-item" href="/about">About us</a></li>
+<li data-match="about/openness"><a class="nav-item" href="/about/openness">Openness philosophy</a></li>
+<li data-match="about/leadership"><a class="nav-item" href="/about/leadership">Leadership</a></li>
+<li data-match="about/team"><a class="nav-item" href="/about/team">Our team</a></li>
+<li data-match="about/investors"><a class="nav-item" href="/about/investors">Investors</a></li>
+<li data-match="about/partners"><a class="nav-item" href="/about/partners">Partners</a></li>
+<li data-match="about/press"><a class="nav-item" href="/about/press">Press</a></li>
+<li data-match="about/testimonials"><a class="nav-item" href="/about/testimonials">Testimonials</a></li>
+<li data-match="about/careers"><a class="nav-item" href="/about/careers">Careers</a></li>
+<li><a target="_blank" class="nav-item" href="http://blog.patientslikeme.com">“Value of Openness” blog</a></li>
+<li id="lnk-plm-in-motion" data-match="about/patientslikeme_in_motion"><a class="nav-item" href="/about/patientslikeme_in_motion">PatientsLikeMe&shy;InMotion™ events</a></li>
+<li data-match="about/privacy"><a class="nav-item" href="/about/privacy">Privacy policy</a></li>
+<li data-match="about/user_agreement"><a class="nav-item" href="/about/user_agreement">User agreement</a></li>
+<li><a class="nav-item" href="http://support.patientslikeme.com/">FAQs and screencasts</a></li>
+<li data-match="contact"><a class="nav-item" href="/about/contact">Contact us</a></li>
+</ul>
+</dd><dd><a class="nav-item" href="http://support.patientslikeme.com/hc/en-us/sections/200247954">Crisis</a></dd>
+</dl>
+</nav>
+
+</div>
+</div>
+</div>
+</nav>
+</header>
+
+<a class="is-hidden-visually" id="startcontent"></a>
+<div class="template-outer" role="main">
+<div class="inline-nav nav-stretch nav-wrapper override-grid">
+<div class="row">
+<div class="columns">
+<div class="secondary-nav" id="condition-filter">
+<div class="condition-filter-items nav-item">
+<span class="inline-block">Filter by patients with:</span>
+<a data-popup-id="condition-filter-menu" class="button menu-opener" data-fn-click="open_popup" href="#">All</a>
+<ul data-popup-type="menu" id="condition-filter-menu" style="display: none">
+<li><a href="/filter_condition/all">All</a></li>
+</ul>
+<label class="is-hidden-visually" for="add_condition_filter_name">Start typing to see suggestions</label>
+<input type="search" id="" class="has-max-width" placeholder="Look up a condition" data-fn-autocompleteselect="apply_condition_filter" data-types="[&quot;Condition&quot;]" data-widget="omni_picker" data-fn-focusin="omni_picker.initialize" />
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="base-panel override-grid row">
+
+
+<div class="container" data-initialize="treamentTabFallback" itemscope itemtype="http://schemaorg-medicalext.appspot.com/Drug">
+<nav class="section-toolbar">
+<ul>
+<li class="toolbar-title">
+<h1>
+<span itemprop="name">Gabapentin</span> treatment report
+</h1>
+</li>
+</ul>
+</nav>
+<div class="row" data-evaluations-only="" data-initialize="treatment_navigation_widget.initialize" data-widget="treatment_navigation_widget">
+<div class="show-for-medium-up">
+<nav class="columns medium-24" id="treatment-report-tabs">
+<ul class="tabs" role="tablist">
+<li class="overview">
+<a data-fn-click="treatment_navigation_widget.navClick" aria-controls="overview" href="/treatments/show/279-gabapentin-side-effects-and-efficacy?brand=f">Overview</a>
+</li>
+<li class="evaluations">
+<a data-fn-click="treatment_navigation_widget.navClick" aria-controls="evaluations" href="/treatment_evaluations/browse/279-gabapentin-side-effects-and-efficacy?brand=f">Individual patient evaluations</a>
+</li>
+
+</ul>
+</nav>
+</div>
+<div class="show-for-small">
+<div class="columns">
+<a class="margin-horizontal inline-block tab-loading" data-fn-click="open_popup" data-popup-id="treatment-report-dropdown" role="button">
+<span class="tab-appearance menu-opener yah" id="treatment-report-dropdown-label"></span>
+</a>
+<nav data-popup-type="menu" id="treatment-report-dropdown" style="display:none">
+<ul class="toc-menu">
+<li class="overview">
+<a data-fn-click="treatment_navigation_widget.navClick" aria-controls="overview" href="/treatments/show/279-gabapentin-side-effects-and-efficacy?brand=f">Overview</a>
+</li>
+<li class="evaluations">
+<a data-fn-click="treatment_navigation_widget.navClick" aria-controls="evaluations" href="/treatment_evaluations/browse/279-gabapentin-side-effects-and-efficacy?brand=f">Individual patient evaluations</a>
+</li>
+
+</ul>
+</nav>
+</div>
+</div>
+</div>
+
+<div id="overview" role="tabpanel">
+<div class="treatment-overview-js" data-initialize="treatment_overview_report.compute_yah" data-widget="treatment_overview_report" data-yah-info="null">
+<div class="row">
+<article class="content-primary columns large-18 medium-18">
+<div class="tab-panel-wrapper tab-panel-no-header content-panel report-wrapper">
+<div class="row">
+<div class="columns large-15 medium-15">
+<header id="summary">
+<h2>What is Gabapentin?</h2>
+</header>
+<p class="margin-vertical-none">
+<strong>Category:</strong>
+<a href="/treatments/browse?cat=1">Prescription Drugs</a>
+</p>
+<p class="show toggle">
+<strong>Most popular types:</strong>
+<span class="comma-separated">
+<a href="/treatments/show/94-neurontin-side-effects-and-efficacy?brand=t">Neurontin</a>
+<a href="/treatments/show/9041-gabatin-side-effects-and-efficacy?brand=t">Gabatin</a>
+<a href="/treatments/show/23727-gralise-side-effects-and-efficacy?brand=t">Gralise</a>
+<a class="treatment-report-other-brand" style="display: none" href="/treatments/show/5276-ratiogabapentin-side-effects-and-efficacy?brand=t">Ratio-Gabapentin</a>
+<a class="treatment-report-other-brand" style="display: none" href="/treatments/show/13108-apogabapentin-side-effects-and-efficacy?brand=t">APO-Gabapentin</a>
+<a class="treatment-report-other-brand" style="display: none" href="/treatments/show/18706-domgabapentin-side-effects-and-efficacy?brand=t">DOM-Gabapentin</a>
+<a class="treatment-report-other-brand" style="display: none" href="/treatments/show/5984-nupentin-side-effects-and-efficacy?brand=t">Nupentin</a>
+<a class="treatment-report-other-brand" style="display: none" href="/treatments/show/26128-epleptin-side-effects-and-efficacy?brand=t">Epleptin</a>
+<a class="treatment-report-other-brand" style="display: none" href="/treatments/show/21327-pmsgabapentin-side-effects-and-efficacy?brand=t">PMS-Gabapentin</a>
+<a class="treatment-report-other-brand" style="display: none" href="/treatments/show/11135-gabaran-side-effects-and-efficacy?brand=t">Gabaran</a>
+</span>
+<a class="content-toggle" data-toggle-content-selector=".treatment-report-other-brand" data-toggled-text="Show top 3" data-fn-click="toggle_content" href="#">Show all</a>
+</p>
+<span itemprop="isProprietary" style="display:none">false</span>
+<p>
+<em>See also:</em>
+<span class="comma-separated">
+<a href="/treatments/show/28667-gabapentinnortriptyline-side-effects-and-efficacy">Gabapentin-Nortriptyline</a>
+</span>
+</p>
+<p itemprop="description">
+Gabapentin is an anticonvulsant medication used as an adjunct treatment for partial seizures and for the management of postherpetic neuralgia and neuropathic pain.
+</p>
+</div>
+<div class="columns large-9 medium-9">
+<div class="flag-object">
+<span class="flag-item">
+<span class="sprite icon-meet-people"></span>
+</span>
+<span class="flag-content">
+<p>
+<a href="/patients?s%5Bexclude_deceased%5D=true&amp;s%5Bt%5D=279">See patients taking Gabapentin</a>
+</p>
+</span>
+</div>
+</div>
+</div>
+
+</div>
+<div class="content-section section-panel" data-widget="treatment_report_section">
+<table class="tbl-default-layout tbl-divided">
+<caption>Reported purpose &amp; perceived effectiveness</caption>
+<colgroup>
+<col class="medium-8">
+<col class="medium-4">
+<col class="medium-4">
+<col class="medium-8">
+</colgroup>
+<thead>
+<tr>
+<th>Purpose</th>
+<th class="numeric">Patients</th>
+<th class="numeric">Evaluations</th>
+<th>Perceived Effectiveness</th>
+</tr>
+</thead>
+<tbody class="ajax-target compacted" data-url="/treatments/279/additional_purpose_rows">
+<tr class="top-n yah-receiver" data-yah-key="purpose" data-yah-value="symptoms-439" itemprop="treats" itemscope itemtype="http://schemaorg-medicalext.appspot.com/MedicalCondition">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+<a href="/symptoms/show/439"><span itemprop="name">Nerve pain (neuralgia)</span>
+</a></th>
+<td class="numeric">
+<a title="See patients who are taking or have taken Gabapentin for this purpose" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?treatment_purpose_symptom=439">2,057</a>
+</td>
+<td class="numeric">
+<a title="See all evaluations with this purpose" href="/treatment_evaluations/browse?brand=false&amp;id=279&amp;symptom_id=439">1,008</a>
+</td>
+<td class="efficacy">
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item bg-efficacy-major" style="width: 23.689956331877728%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=439&amp;value=4"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 217 evaluations from 176 patients with major perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-moderate" style="width: 38.10043668122271%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=439&amp;value=3"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 349 evaluations from 301 patients with moderate perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-slight" style="width: 22.16157205240175%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=439&amp;value=2"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 203 evaluations from 176 patients with slight perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-none" style="width: 8.951965065502183%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=439&amp;value=1"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 82 evaluations from 71 patients with none perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-cant_tell" style="width: 7.096069868995633%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=439&amp;value=0"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 65 evaluations from 58 patients with unknown perceived effectiveness</small></a></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="purpose" data-yah-value="conditions-8" itemprop="treats" itemscope itemtype="http://schemaorg-medicalext.appspot.com/MedicalCondition">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+<a href="/conditions/8"><span itemprop="name">Fibromyalgia</span>
+</a></th>
+<td class="numeric">
+<a title="See patients who are taking or have taken Gabapentin for this purpose" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?treatment_purpose_condition=8">2,027</a>
+</td>
+<td class="numeric">
+<a title="See all evaluations with this purpose" href="/treatment_evaluations/browse?brand=false&amp;condition_id=8&amp;id=279">989</a>
+</td>
+<td class="efficacy">
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item bg-efficacy-major" style="width: 11.795407098121085%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;condition_id=8&amp;id=279&amp;value=4"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 113 evaluations from 103 patients with major perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-moderate" style="width: 33.194154488517746%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;condition_id=8&amp;id=279&amp;value=3"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 318 evaluations from 268 patients with moderate perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-slight" style="width: 29.64509394572025%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;condition_id=8&amp;id=279&amp;value=2"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 284 evaluations from 240 patients with slight perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-none" style="width: 14.19624217118998%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;condition_id=8&amp;id=279&amp;value=1"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 136 evaluations from 117 patients with none perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-cant_tell" style="width: 11.169102296450939%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;condition_id=8&amp;id=279&amp;value=0"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 107 evaluations from 92 patients with unknown perceived effectiveness</small></a></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="purpose" data-yah-value="symptoms-6" itemprop="treats" itemscope itemtype="http://schemaorg-medicalext.appspot.com/MedicalCondition">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+<a href="/symptoms/show/6"><span itemprop="name">Pain</span>
+</a></th>
+<td class="numeric">
+<a title="See patients who are taking or have taken Gabapentin for this purpose" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?treatment_purpose_symptom=6">1,806</a>
+</td>
+<td class="numeric">
+<a title="See all evaluations with this purpose" href="/treatment_evaluations/browse?brand=false&amp;id=279&amp;symptom_id=6">822</a>
+</td>
+<td class="efficacy">
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item bg-efficacy-major" style="width: 15.44502617801047%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=6&amp;value=4"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 118 evaluations from 92 patients with major perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-moderate" style="width: 35.602094240837694%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=6&amp;value=3"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 272 evaluations from 231 patients with moderate perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-slight" style="width: 28.79581151832461%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=6&amp;value=2"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 220 evaluations from 195 patients with slight perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-none" style="width: 12.434554973821989%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=6&amp;value=1"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 95 evaluations from 86 patients with none perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-cant_tell" style="width: 7.722513089005235%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=6&amp;value=0"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 59 evaluations from 53 patients with unknown perceived effectiveness</small></a></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="purpose" data-yah-value="conditions-329" itemprop="treats" itemscope itemtype="http://schemaorg-medicalext.appspot.com/MedicalCondition">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+<a href="/conditions/329"><span itemprop="name">Peripheral Neuropathy</span>
+</a></th>
+<td class="numeric">
+<a title="See patients who are taking or have taken Gabapentin for this purpose" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?treatment_purpose_condition=329">374</a>
+</td>
+<td class="numeric">
+<a title="See all evaluations with this purpose" href="/treatment_evaluations/browse?brand=false&amp;condition_id=329&amp;id=279">150</a>
+</td>
+<td class="efficacy">
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item bg-efficacy-major" style="width: 20.66115702479339%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;condition_id=329&amp;id=279&amp;value=4"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 25 evaluations from 21 patients with major perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-moderate" style="width: 30.578512396694215%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;condition_id=329&amp;id=279&amp;value=3"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 37 evaluations from 36 patients with moderate perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-slight" style="width: 23.140495867768596%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;condition_id=329&amp;id=279&amp;value=2"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 28 evaluations from 27 patients with slight perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-none" style="width: 18.181818181818183%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;condition_id=329&amp;id=279&amp;value=1"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 22 evaluations from 21 patients with none perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-cant_tell" style="width: 7.43801652892562%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;condition_id=329&amp;id=279&amp;value=0"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 9 evaluations from 8 patients with unknown perceived effectiveness</small></a></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="purpose" data-yah-value="symptoms-205" itemprop="treats" itemscope itemtype="http://schemaorg-medicalext.appspot.com/MedicalCondition">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+<a href="/symptoms/show/205"><span itemprop="name">Numbness and tingling with pins and needles</span>
+</a></th>
+<td class="numeric">
+<a title="See patients who are taking or have taken Gabapentin for this purpose" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?treatment_purpose_symptom=205">350</a>
+</td>
+<td class="numeric">
+<a title="See all evaluations with this purpose" href="/treatment_evaluations/browse?brand=false&amp;id=279&amp;symptom_id=205">147</a>
+</td>
+<td class="efficacy">
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item bg-efficacy-major" style="width: 17.142857142857142%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=205&amp;value=4"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 24 evaluations from 23 patients with major perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-moderate" style="width: 39.285714285714285%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=205&amp;value=3"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 55 evaluations from 46 patients with moderate perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-slight" style="width: 26.428571428571427%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=205&amp;value=2"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 37 evaluations from 26 patients with slight perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-none" style="width: 10.0%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=205&amp;value=1"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 14 evaluations from 13 patients with none perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-cant_tell" style="width: 7.142857142857143%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=205&amp;value=0"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 10 evaluations from 9 patients with unknown perceived effectiveness</small></a></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="purpose" data-yah-value="symptoms-5" itemprop="treats" itemscope itemtype="http://schemaorg-medicalext.appspot.com/MedicalCondition">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+<a href="/symptoms/show/5"><span itemprop="name">Stiffness/Spasticity</span>
+</a></th>
+<td class="numeric">
+<a title="See patients who are taking or have taken Gabapentin for this purpose" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?treatment_purpose_symptom=5">225</a>
+</td>
+<td class="numeric">
+<a title="See all evaluations with this purpose" href="/treatment_evaluations/browse?brand=false&amp;id=279&amp;symptom_id=5">92</a>
+</td>
+<td class="efficacy">
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item bg-efficacy-major" style="width: 22.22222222222222%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=5&amp;value=4"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 18 evaluations from 18 patients with major perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-moderate" style="width: 44.44444444444444%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=5&amp;value=3"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 36 evaluations from 25 patients with moderate perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-slight" style="width: 23.45679012345679%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=5&amp;value=2"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 19 evaluations from 17 patients with slight perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-none" style="width: 4.938271604938271%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=5&amp;value=1"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 4 evaluations from 4 patients with none perceived effectiveness</small></a></li><li class="bar-graph-item bg-efficacy-cant_tell" style="width: 4.938271604938271%"><a class="block has-tooltip" href="/treatment_evaluations/browse?attribute=efficacy&amp;brand=false&amp;id=279&amp;symptom_id=5&amp;value=0"><small class="is-tooltip is-tooltip-multiline" role="tooltip">
+See 4 evaluations from 3 patients with unknown perceived effectiveness</small></a></li></ul>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p class="show toggle">
+<a class="content-toggle" data-fn-click="treatment_report_section.toggle_compacted" href="#">Show all
+<strong>561 reasons taken</strong>
+<span class="loading" style="display: none;"></span>
+</a></p>
+<p class="hide toggle" style="display: none;">
+<a class="content-toggle is-open" data-fn-click="treatment_report_section.toggle_compacted" href="#">Show top
+<strong>6 reasons taken</strong>
+</a></p>
+<hr>
+<div class="align-right"><ul class="list-inline inline-block">
+<li>
+<span class="icon icon-block bg-efficacy-major"></span>
+Major
+</li>
+<li>
+<span class="icon icon-block bg-efficacy-moderate"></span>
+Moderate
+</li>
+<li>
+<span class="icon icon-block bg-efficacy-slight"></span>
+Slight
+</li>
+<li>
+<span class="icon icon-block bg-efficacy-none"></span>
+None
+</li>
+<li>
+<span class="icon icon-block bg-efficacy-cant_tell"></span>
+Can't tell
+</li>
+</ul>
+</div>
+</div>
+
+<div class="glass-panel">
+<a href="/patients/treatment/279-gabapentin-side-effects-and-efficacy">See
+all
+<strong>
+1,087 patients
+
+</strong>
+<span>that have taken Gabapentin</span>
+</a></div>
+<div class="content-section section-panel">
+<h2>Side effects</h2>
+<div class="row">
+<div class="columns medium-12">
+<h3 class="tertiary-title">Side effects as an overall problem</h3>
+<div class="media-block">
+<div class="media-item">
+<div class="pie-chart pie-chart-holder" data-colors='["#00A828","#FFDB00","#FF7500","#E90000"]' data-href='["\/treatment_evaluations\/browse?attribute=side_effects&amp;brand=false&amp;id=279&amp;value=1","\/treatment_evaluations\/browse?attribute=side_effects&amp;brand=false&amp;id=279&amp;value=2","\/treatment_evaluations\/browse?attribute=side_effects&amp;brand=false&amp;id=279&amp;value=3","\/treatment_evaluations\/browse?attribute=side_effects&amp;brand=false&amp;id=279&amp;value=4"]' data-initialize="draw_pie_chart" data-strokewidth="0" data-values="[1157,827,687,405]" style="height: 120px; width: 120px"></div>
+
+</div>
+<div class="media-content">
+<table class="tbl-default-layout tbl-divided">
+<caption class="accessible-hide">
+Side effects as an overall problem
+</caption>
+<colgroup>
+<col class="medium-10">
+<col class="medium-4">
+<col class="medium-10">
+</colgroup>
+<thead>
+<tr>
+<th>Severity</th>
+<th></th>
+<th class="numeric">Evaluations</th>
+</tr>
+</thead>
+<tbody>
+<tr class="yah-receiver" data-yah-key="overall_side_effects" data-yah-value="4">
+<td>
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Severe
+</td>
+<td><img alt="" src="//dy82vckl8b34w.cloudfront.net/assets/side_effect_severe-ff3742c871950e89ead2e1a2b965235f.png" width="9" height="16" /></td>
+<td class="numeric">
+<a href="/treatment_evaluations/browse?attribute=side_effects&amp;brand=false&amp;id=279&amp;value=4">405</a>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="overall_side_effects" data-yah-value="3">
+<td>
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Moderate
+</td>
+<td><img alt="" src="//dy82vckl8b34w.cloudfront.net/assets/side_effect_moderate-dc516f12804077dbee2faa0c58a5f39d.png" width="9" height="16" /></td>
+<td class="numeric">
+<a href="/treatment_evaluations/browse?attribute=side_effects&amp;brand=false&amp;id=279&amp;value=3">687</a>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="overall_side_effects" data-yah-value="2">
+<td>
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Mild
+</td>
+<td><img alt="" src="//dy82vckl8b34w.cloudfront.net/assets/side_effect_mild-63f28fc525b1cf8d4837b99a9fe38066.png" width="9" height="16" /></td>
+<td class="numeric">
+<a href="/treatment_evaluations/browse?attribute=side_effects&amp;brand=false&amp;id=279&amp;value=2">827</a>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="overall_side_effects" data-yah-value="1">
+<td>
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+None
+</td>
+<td><img alt="" src="//dy82vckl8b34w.cloudfront.net/assets/side_effect_none-6b4265a245cfab63b4a4805cb7877017.png" width="9" height="16" /></td>
+<td class="numeric">
+<a href="/treatment_evaluations/browse?attribute=side_effects&amp;brand=false&amp;id=279&amp;value=1">1,157</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="columns medium-12" data-widget="treatment_report_section">
+<h3 class="tertiary-title">
+Commonly reported side effects and conditions associated with Gabapentin
+</h3>
+<table class="tbl-default-layout tbl-divided" summary="Side effects of Gabapentin">
+<col class="medium-10">
+<col class="medium-4">
+<col class="medium-10">
+<thead>
+<tr>
+<th>Side effect</th>
+<th class="numeric">Patients</th>
+<th></th>
+</tr>
+</thead>
+<tbody class="ajax-target compacted" data-url="/treatments/279/additional_side_effect_rows">
+<tr class="top-n yah-receiver" data-yah-key="side_effect" data-yah-value="symptoms-224" itemprop="treats" itemscope itemtype="http://schemaorg-medicalext.appspot.com/MedicalCondition">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+<a href="/symptoms/show/224"><span itemprop="name">Weight gain</span>
+</a></th>
+<td class="numeric">
+217
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 14.544235924932975%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+217</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="side_effect" data-yah-value="symptoms-1922" itemprop="treats" itemscope itemtype="http://schemaorg-medicalext.appspot.com/MedicalCondition">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+<a href="/symptoms/show/1922"><span itemprop="name">Sleepiness</span>
+</a></th>
+<td class="numeric">
+136
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 9.115281501340483%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+136</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="side_effect" data-yah-value="symptoms-2041" itemprop="treats" itemscope itemtype="http://schemaorg-medicalext.appspot.com/MedicalCondition">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+<a href="/symptoms/show/2041"><span itemprop="name">Drowsiness</span>
+</a></th>
+<td class="numeric">
+132
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 8.847184986595174%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+132</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="side_effect" data-yah-value="symptoms-7" itemprop="treats" itemscope itemtype="http://schemaorg-medicalext.appspot.com/MedicalCondition">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+<a href="/symptoms/show/7"><span itemprop="name">Fatigue</span>
+</a></th>
+<td class="numeric">
+132
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 8.847184986595174%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+132</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="side_effect" data-yah-value="symptoms-165" itemprop="treats" itemscope itemtype="http://schemaorg-medicalext.appspot.com/MedicalCondition">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+<a href="/symptoms/show/165"><span itemprop="name">Dizziness</span>
+</a></th>
+<td class="numeric">
+120
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 8.04289544235925%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+120</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="side_effect" data-yah-value="symptoms-189" itemprop="treats" itemscope itemtype="http://schemaorg-medicalext.appspot.com/MedicalCondition">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+<a href="/symptoms/show/189"><span itemprop="name">Brain fog</span>
+</a></th>
+<td class="numeric">
+76
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 5.093833780160858%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+76</small></span></li></ul>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p class="show toggle">
+<a class="content-toggle" data-fn-click="treatment_report_section.toggle_compacted" href="#">Show all
+<strong>544 reported side effects</strong>
+<span class="loading" style="display: none;"></span>
+</a></p>
+<p class="hide toggle" style="display: none;">
+<a class="content-toggle is-open" data-fn-click="treatment_report_section.toggle_compacted" href="#">Show top
+<strong>6 reported side effects</strong>
+</a></p>
+</div>
+</div>
+</div>
+
+<div class="data-panel">
+<div class="row">
+<div class="columns medium-12">
+<div data-widget="treatment_report_section">
+<h2>Dosages</h2>
+<p class="helptext">Based on patients currently taking Gabapentin</p>
+<table class="tbl-default-layout tbl-divided">
+<colgroup>
+<col class="medium-10">
+<col class="medium-4">
+<col class="medium-10">
+</colgroup>
+<thead>
+<tr>
+<th>Dosage</th>
+<th class="numeric">Patients</th>
+<th></th>
+</tr>
+</thead>
+<tbody class="ajax-target compacted" data-url="/treatments/279/additional_dosage_rows">
+<tr class="top-n yah-receiver" data-yah-key="dosage" data-yah-value="300 mg three times daily">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+300 mg three times daily
+</th>
+<td class="numeric">
+<a title="See patients who are currently taking Gabapentin at this dosage" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?dosage_string=300+mg+three+times+daily&amp;stopped=false">111</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 10.344827586206897%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+111</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="dosage" data-yah-value="300 mg daily">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+300 mg daily
+</th>
+<td class="numeric">
+<a title="See patients who are currently taking Gabapentin at this dosage" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?dosage_string=300+mg+daily&amp;stopped=false">99</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 9.226467847157503%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+99</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="dosage" data-yah-value="600 mg three times daily">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+600 mg three times daily
+</th>
+<td class="numeric">
+<a title="See patients who are currently taking Gabapentin at this dosage" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?dosage_string=600+mg+three+times+daily&amp;stopped=false">84</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 7.82851817334576%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+84</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="dosage" data-yah-value="900 mg daily">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+900 mg daily
+</th>
+<td class="numeric">
+<a title="See patients who are currently taking Gabapentin at this dosage" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?dosage_string=900+mg+daily&amp;stopped=false">55</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 5.125815470643057%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+55</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="dosage" data-yah-value="600 mg daily">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+600 mg daily
+</th>
+<td class="numeric">
+<a title="See patients who are currently taking Gabapentin at this dosage" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?dosage_string=600+mg+daily&amp;stopped=false">51</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 4.753028890959926%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+51</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="dosage" data-yah-value="300 mg twice daily">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+300 mg twice daily
+</th>
+<td class="numeric">
+<a title="See patients who are currently taking Gabapentin at this dosage" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?dosage_string=300+mg+twice+daily&amp;stopped=false">48</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 4.473438956197577%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+48</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="dosage" data-yah-value="1,800 mg daily">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+1,800 mg daily
+</th>
+<td class="numeric">
+<a title="See patients who are currently taking Gabapentin at this dosage" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?dosage_string=1800+mg+daily&amp;stopped=false">44</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 4.100652376514446%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+44</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="dosage" data-yah-value="1,200 mg daily">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+1,200 mg daily
+</th>
+<td class="numeric">
+<a title="See patients who are currently taking Gabapentin at this dosage" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?dosage_string=1200+mg+daily&amp;stopped=false">40</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 3.7278657968313142%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+40</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="dosage" data-yah-value="600 mg twice daily">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+600 mg twice daily
+</th>
+<td class="numeric">
+<a title="See patients who are currently taking Gabapentin at this dosage" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?dosage_string=600+mg+twice+daily&amp;stopped=false">35</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 3.2618825722273996%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+35</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-yah-key="dosage" data-yah-value="100 mg three times daily">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+100 mg three times daily
+</th>
+<td class="numeric">
+<a title="See patients who are currently taking Gabapentin at this dosage" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?dosage_string=100+mg+three+times+daily&amp;stopped=false">34</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 3.168685927306617%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+34</small></span></li></ul>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p class="show toggle">
+<a class="content-toggle" data-fn-click="treatment_report_section.toggle_compacted" href="#">See all
+<strong>109 dosages</strong>
+<span class="loading" style="display: none;"></span>
+</a></p>
+<p class="hide toggle" style="display: none;">
+<a class="content-toggle is-open" data-fn-click="treatment_report_section.toggle_compacted" href="#">See top
+<strong>10 dosages</strong>
+</a></p>
+</div>
+
+</div>
+<div class="columns medium-12">
+<h2>Why patients stopped taking Gabapentin</h2>
+<p class="helptext">Multiple reasons could be selected</p>
+<table class="tbl-default-layout tbl-divided">
+<colgroup>
+<col class="medium-10">
+<col class="medium-4">
+<col class="medium-10">
+</colgroup>
+<thead>
+<th>Reason</th>
+<th class="numeric">Patients</th>
+<th></th>
+</thead>
+<tbody>
+<tr class="yah-receiver" data-yah-key="stop_reason" data-yah-value="1">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Did not seem to work
+</th>
+<td class="numeric">
+<a title="See patients who stopped taking Gabapentin for this reason" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?stop_reason=1">803</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 47.014051522248245%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+803</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="stop_reason" data-yah-value="5">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Side effects too severe
+</th>
+<td class="numeric">
+<a title="See patients who stopped taking Gabapentin for this reason" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?stop_reason=5">639</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 37.412177985948475%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+639</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="stop_reason" data-yah-value="4">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Doctor's advice
+</th>
+<td class="numeric">
+<a title="See patients who stopped taking Gabapentin for this reason" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?stop_reason=4">359</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 21.018735362997656%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+359</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="stop_reason" data-yah-value="6">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Other
+</th>
+<td class="numeric">
+<a title="See patients who stopped taking Gabapentin for this reason" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?stop_reason=6">260</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 15.22248243559719%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+260</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="stop_reason" data-yah-value="7">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Course of treatment ended
+</th>
+<td class="numeric">
+<a title="See patients who stopped taking Gabapentin for this reason" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?stop_reason=7">85</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 4.976580796252928%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+85</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="stop_reason" data-yah-value="2">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Expense
+</th>
+<td class="numeric">
+<a title="See patients who stopped taking Gabapentin for this reason" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?stop_reason=2">70</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 4.098360655737705%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+70</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="stop_reason" data-yah-value="3">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Personal research
+</th>
+<td class="numeric">
+<a title="See patients who stopped taking Gabapentin for this reason" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?stop_reason=3">68</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 3.981264637002342%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+68</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="stop_reason" data-yah-value="8">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Change in health plan coverage
+</th>
+<td class="numeric">
+<a title="See patients who stopped taking Gabapentin for this reason" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?stop_reason=8">39</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 2.2833723653395785%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+39</small></span></li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+<a href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?stopped=true">See all
+<strong>1708 patients</strong>
+
+who’ve stopped taking Gabapentin
+</a></div>
+</div>
+</div>
+<div class="data-panel">
+<h2>Duration</h2>
+<div class="row">
+<div class="columns medium-12">
+<h3 class="tertiary-title">
+Currently taking Gabapentin
+</h3>
+<table class="tbl-default-layout tbl-divided">
+<colgroup>
+<col class="medium-10">
+<col class="medium-4">
+<col class="medium-10">
+</colgroup>
+<thead>
+<th>Duration</th>
+<th class="numeric">Patients</th>
+<th></th>
+</thead>
+<tbody>
+<tr class="yah-receiver" data-yah-key="duration_current" data-yah-value="0">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Less than 1 month
+</th>
+<td class="numeric">
+<a title="See patients who have been taking Gabapentin for this long" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?max_duration=2592000.0&amp;min_duration=0.0">10</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 0.9199632014719411%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+10</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="duration_current" data-yah-value="2592000">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+1 - 6 months
+</th>
+<td class="numeric">
+<a title="See patients who have been taking Gabapentin for this long" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?max_duration=15552000.0&amp;min_duration=2592000.0">55</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 5.059797608095677%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+55</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="duration_current" data-yah-value="15552000">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+6 months - 1 year
+</th>
+<td class="numeric">
+<a title="See patients who have been taking Gabapentin for this long" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?max_duration=31557600.0&amp;min_duration=15552000.0">118</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 10.855565777368906%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+118</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="duration_current" data-yah-value="31557600">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+1 - 2 years
+</th>
+<td class="numeric">
+<a title="See patients who have been taking Gabapentin for this long" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?max_duration=63115200.0&amp;min_duration=31557600.0">170</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 15.639374425022998%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+170</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="duration_current" data-yah-value="63115200">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+2 - 5 years
+</th>
+<td class="numeric">
+<a title="See patients who have been taking Gabapentin for this long" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?max_duration=157788000.0&amp;min_duration=63115200.0">346</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 31.830726770929164%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+346</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="duration_current" data-yah-value="157788000">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+5 - 10 years
+</th>
+<td class="numeric">
+<a title="See patients who have been taking Gabapentin for this long" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?max_duration=315576000.0&amp;min_duration=157788000.0">263</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 24.195032198712052%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+263</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="duration_current" data-yah-value="315576000">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+10 years or more
+</th>
+<td class="numeric">
+<a title="See patients who have been taking Gabapentin for this long" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?min_duration=315576000.0">127</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 11.683532658693652%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+127</small></span></li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<div class="columns medium-12">
+<h3 class="tertiary-title">
+Stopped taking Gabapentin
+</h3>
+<table class="tbl-default-layout tbl-divided">
+<colgroup>
+<col class="medium-10">
+<col class="medium-4">
+<col class="medium-10">
+</colgroup>
+<thead>
+<th>Duration</th>
+<th class="numeric">Patients</th>
+<th></th>
+</thead>
+<tbody>
+<tr class="yah-receiver" data-yah-key="duration_stopped" data-yah-value="0">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Less than 1 month
+</th>
+<td class="numeric">
+<a title="See patients who took Gabapentin for this long" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?max_duration=2592000.0&amp;min_duration=0.0&amp;stopped=true">308</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 18.0327868852459%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+308</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="duration_stopped" data-yah-value="2592000">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+1 - 6 months
+</th>
+<td class="numeric">
+<a title="See patients who took Gabapentin for this long" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?max_duration=15552000.0&amp;min_duration=2592000.0&amp;stopped=true">451</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 26.405152224824356%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+451</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="duration_stopped" data-yah-value="15552000">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+6 months - 1 year
+</th>
+<td class="numeric">
+<a title="See patients who took Gabapentin for this long" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?max_duration=31557600.0&amp;min_duration=15552000.0&amp;stopped=true">290</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 16.978922716627636%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+290</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="duration_stopped" data-yah-value="31557600">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+1 - 2 years
+</th>
+<td class="numeric">
+<a title="See patients who took Gabapentin for this long" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?max_duration=63115200.0&amp;min_duration=31557600.0&amp;stopped=true">286</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 16.74473067915691%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+286</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="duration_stopped" data-yah-value="63115200">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+2 - 5 years
+</th>
+<td class="numeric">
+<a title="See patients who took Gabapentin for this long" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?max_duration=157788000.0&amp;min_duration=63115200.0&amp;stopped=true">271</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 15.866510538641686%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+271</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="duration_stopped" data-yah-value="157788000">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+5 - 10 years
+</th>
+<td class="numeric">
+<a title="See patients who took Gabapentin for this long" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?max_duration=315576000.0&amp;min_duration=157788000.0&amp;stopped=true">83</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 4.859484777517564%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+83</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="duration_stopped" data-yah-value="315576000">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+10 years or more
+</th>
+<td class="numeric">
+<a title="See patients who took Gabapentin for this long" href="/patients/treatment/279-gabapentin-side-effects-and-efficacy?min_duration=315576000.0&amp;stopped=true">36</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 2.107728337236534%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+36</small></span></li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="content-section section-panel">
+<div class="row">
+<div class="columns medium-12"><table class="tbl-default-layout tbl-divided">
+<caption>
+Adherence
+</caption>
+<colgroup>
+<col class="medium-10">
+<col class="medium-4">
+<col class="medium-10">
+</colgroup>
+<thead>
+<th>Adherence</th>
+<th class="numeric">Evaluations</th>
+<th></th>
+</thead>
+<tbody>
+<tr class="yah-receiver" data-yah-key="adherence" data-yah-value="3">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Always
+
+
+</th>
+<td class="numeric">
+<a href="/treatment_evaluations/browse?attribute=adherence&amp;brand=false&amp;id=279&amp;value=3">2329</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 75.7152145643693%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+2329 evaluations from 1785 patients</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="adherence" data-yah-value="2">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Usually
+
+
+</th>
+<td class="numeric">
+<a href="/treatment_evaluations/browse?attribute=adherence&amp;brand=false&amp;id=279&amp;value=2">450</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 14.629388816644994%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+450 evaluations from 395 patients</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="adherence" data-yah-value="1">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Sometimes
+
+
+</th>
+<td class="numeric">
+<a href="/treatment_evaluations/browse?attribute=adherence&amp;brand=false&amp;id=279&amp;value=1">150</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 4.876462938881665%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+150 evaluations from 134 patients</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="adherence" data-yah-value="0">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Never
+
+taken as prescribed
+</th>
+<td class="numeric">
+<a href="/treatment_evaluations/browse?attribute=adherence&amp;brand=false&amp;id=279&amp;value=0">147</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 4.778933680104031%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+147 evaluations from 135 patients</small></span></li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="columns medium-12"><table class="tbl-default-layout tbl-divided">
+<caption>
+Burden
+</caption>
+<colgroup>
+<col class="medium-10">
+<col class="medium-4">
+<col class="medium-10">
+</colgroup>
+<thead>
+<th>Burden</th>
+<th class="numeric">Evaluations</th>
+<th></th>
+</thead>
+<tbody>
+<tr class="yah-receiver" data-yah-key="burden" data-yah-value="3">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Very
+hard to take
+
+</th>
+<td class="numeric">
+<a href="/treatment_evaluations/browse?attribute=burden&amp;brand=false&amp;id=279&amp;value=3">161</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 5.23407022106632%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+161 evaluations from 143 patients</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="burden" data-yah-value="2">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Somewhat
+hard to take
+
+</th>
+<td class="numeric">
+<a href="/treatment_evaluations/browse?attribute=burden&amp;brand=false&amp;id=279&amp;value=2">329</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 10.695708712613785%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+329 evaluations from 298 patients</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="burden" data-yah-value="1">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+A little
+hard to take
+
+</th>
+<td class="numeric">
+<a href="/treatment_evaluations/browse?attribute=burden&amp;brand=false&amp;id=279&amp;value=1">510</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 16.579973992197658%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+510 evaluations from 455 patients</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="burden" data-yah-value="0">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Not at all
+hard to take
+
+</th>
+<td class="numeric">
+<a href="/treatment_evaluations/browse?attribute=burden&amp;brand=false&amp;id=279&amp;value=0">2076</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 67.49024707412224%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+2076 evaluations from 1631 patients</small></span></li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="content-section section-panel">
+<div class="row">
+<div class="columns medium-12"><table class="tbl-default-layout tbl-divided">
+<caption>
+Cost per month
+</caption>
+<colgroup>
+<col class="medium-10">
+<col class="medium-4">
+<col class="medium-10">
+</colgroup>
+<thead>
+<th>Cost per month</th>
+<th class="numeric">Evaluations</th>
+<th></th>
+</thead>
+<tbody>
+<tr class="yah-receiver" data-yah-key="cost" data-yah-value="5">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+$200+
+
+
+</th>
+<td class="numeric">
+<a href="/treatment_evaluations/browse?attribute=cost&amp;brand=false&amp;id=279&amp;value=5">35</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 1.1378413524057218%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+35 evaluations from 23 patients</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="cost" data-yah-value="4">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+$100-199
+
+
+</th>
+<td class="numeric">
+<a href="/treatment_evaluations/browse?attribute=cost&amp;brand=false&amp;id=279&amp;value=4">31</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 1.0078023407022108%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+31 evaluations from 24 patients</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="cost" data-yah-value="3">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+$50-99
+
+
+</th>
+<td class="numeric">
+<a href="/treatment_evaluations/browse?attribute=cost&amp;brand=false&amp;id=279&amp;value=3">75</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 2.4382314694408325%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+75 evaluations from 60 patients</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="cost" data-yah-value="2">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+$25-49
+
+
+</th>
+<td class="numeric">
+<a href="/treatment_evaluations/browse?attribute=cost&amp;brand=false&amp;id=279&amp;value=2">147</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 4.778933680104031%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+147 evaluations from 120 patients</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="cost" data-yah-value="1">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+&lt; $25
+
+
+</th>
+<td class="numeric">
+<a href="/treatment_evaluations/browse?attribute=cost&amp;brand=false&amp;id=279&amp;value=1">1566</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 50.91027308192458%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+1566 evaluations from 1130 patients</small></span></li></ul>
+</td>
+</tr>
+<tr class="yah-receiver" data-yah-key="cost" data-yah-value="0">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Not specified
+
+
+</th>
+<td class="numeric">
+<a href="/treatment_evaluations/browse?attribute=cost&amp;brand=false&amp;id=279&amp;value=0">1222</a>
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 39.726918075422624%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+1222 evaluations from 1011 patients</small></span></li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="columns medium-12"></div>
+</div>
+</div>
+
+<div class="data-panel">
+<h2>What people switch to and from</h2>
+<div class="row">
+<div class="columns medium-12">
+<div data-widget="treatment_report_section">
+<p>Patients <strong>started</strong> taking Gabapentin <strong>after stopping:</strong></p>
+<table class="tbl-default-layout tbl-divided">
+<colgroup>
+<col class="medium-10">
+<col class="medium-4">
+<col class="medium-10">
+</colgroup>
+<thead>
+<tr>
+<th>Treatment</th>
+<th class="numeric">Patients</th>
+<th></th>
+</tr>
+</thead>
+<tbody class="ajax-target compacted" data-url="/treatments/279/additional_treatment_switch_rows?direction=switched_from">
+<tr class="top-n yah-receiver" data-initialize="treatment_overview_report.compute_yah" data-yah-key="switched_from_treatment" data-yah-value="2422" foo="bar">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Pregabalin
+<small class="comma-delimited">
+(<span>Lyrica</span>)
+</small>
+</th>
+<td class="numeric">
+116
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 42.33576642335766%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+116</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-initialize="treatment_overview_report.compute_yah" data-yah-key="switched_from_treatment" data-yah-value="2421" foo="bar">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Duloxetine
+<small class="comma-delimited">
+(<span>Cymbalta</span>)
+</small>
+</th>
+<td class="numeric">
+31
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 11.313868613138686%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+31</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-initialize="treatment_overview_report.compute_yah" data-yah-key="switched_from_treatment" data-yah-value="164" foo="bar">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Amitriptyline
+<small class="comma-delimited">
+(<span>Elavil</span>)
+</small>
+</th>
+<td class="numeric">
+20
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 7.299270072992701%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+20</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-initialize="treatment_overview_report.compute_yah" data-yah-key="switched_from_treatment" data-yah-value="1778" foo="bar">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Topiramate
+<small class="comma-delimited">
+(<span>Topamax</span>)
+</small>
+</th>
+<td class="numeric">
+11
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 4.014598540145985%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+11</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-initialize="treatment_overview_report.compute_yah" data-yah-key="switched_from_treatment" data-yah-value="192" foo="bar">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Tramadol
+<small class="comma-delimited">
+(<span>Ultram</span>)
+</small>
+</th>
+<td class="numeric">
+10
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 3.6496350364963503%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+10</small></span></li></ul>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p class="show toggle">
+<a class="content-toggle" data-fn-click="treatment_report_section.toggle_compacted" href="#">Show all
+<strong>69 treatments</strong>
+patients report switching from
+<span class="loading" style="display: none;"></span>
+</a></p>
+<p class="hide toggle" style="display: none;">
+<a class="content-toggle is-open" data-fn-click="treatment_report_section.toggle_compacted" href="#">Show top
+<strong>5 treatments</strong>
+patients report switching from
+</a></p>
+</div>
+
+</div>
+<div class="columns medium-12">
+<div data-widget="treatment_report_section">
+<p>Patients <strong>stopped</strong> taking Gabapentin and <strong>switched to:</strong></p>
+<table class="tbl-default-layout tbl-divided">
+<colgroup>
+<col class="medium-10">
+<col class="medium-4">
+<col class="medium-10">
+</colgroup>
+<thead>
+<tr>
+<th>Treatment</th>
+<th class="numeric">Patients</th>
+<th></th>
+</tr>
+</thead>
+<tbody class="ajax-target compacted" data-url="/treatments/279/additional_treatment_switch_rows?direction=switched_to">
+<tr class="top-n yah-receiver" data-initialize="treatment_overview_report.compute_yah" data-yah-key="switched_to_treatment" data-yah-value="2422" foo="bar">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Pregabalin
+<small class="comma-delimited">
+(<span>Lyrica</span>)
+</small>
+</th>
+<td class="numeric">
+126
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 51.42857142857143%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+126</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-initialize="treatment_overview_report.compute_yah" data-yah-key="switched_to_treatment" data-yah-value="2421" foo="bar">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Duloxetine
+<small class="comma-delimited">
+(<span>Cymbalta</span>)
+</small>
+</th>
+<td class="numeric">
+21
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 8.571428571428571%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+21</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-initialize="treatment_overview_report.compute_yah" data-yah-key="switched_to_treatment" data-yah-value="192" foo="bar">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Tramadol
+<small class="comma-delimited">
+(<span>Ultram</span>)
+</small>
+</th>
+<td class="numeric">
+15
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 6.122448979591836%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+15</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-initialize="treatment_overview_report.compute_yah" data-yah-key="switched_to_treatment" data-yah-value="164" foo="bar">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Amitriptyline
+<small class="comma-delimited">
+(<span>Elavil</span>)
+</small>
+</th>
+<td class="numeric">
+6
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 2.4489795918367347%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+6</small></span></li></ul>
+</td>
+</tr>
+<tr class="top-n yah-receiver" data-initialize="treatment_overview_report.compute_yah" data-yah-key="switched_to_treatment" data-yah-value="851" foo="bar">
+<th scope="row">
+<span class="if-yah-js" style="display: none;"><span class="you-indicator-wrapper "><span class="icon icon-littledude you-indicator">This item is relevant to you: </span></span></span>
+Nortriptyline
+<small class="comma-delimited">
+(<span>Pamelor</span>)
+</small>
+</th>
+<td class="numeric">
+5
+</td>
+<td>
+<ul class="sandwich-chart bar-graph-wrapper" role="img"><li class="bar-graph-item default-bar-color" style="width: 2.0408163265306123%"><span class="block has-tooltip" style="height: 100%" tabindex="0">
+<small class="is-tooltip" role="tooltip">
+5</small></span></li></ul>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p class="show toggle">
+<a class="content-toggle" data-fn-click="treatment_report_section.toggle_compacted" href="#">Show all
+<strong>59 treatments</strong>
+patients report switching to
+<span class="loading" style="display: none;"></span>
+</a></p>
+<p class="hide toggle" style="display: none;">
+<a class="content-toggle is-open" data-fn-click="treatment_report_section.toggle_compacted" href="#">Show top
+<strong>5 treatments</strong>
+patients report switching to
+</a></p>
+</div>
+
+</div>
+</div>
+</div>
+<div class="content-panel">
+<small class="helptext">
+Last updated:
+<time datetime="2017-02-07T13:32:57+00:00">February  7, 2017</time>
+</small>
+
+</div>
+</article>
+<div class="aside-wrapper columns large-6 medium-6">
+<aside class="glass-panel" role="complementary">
+<h2>
+Patient Evaluations
+</h2>
+<p>
+<a href="/treatment_evaluations/browse?brand=f&amp;id=279-gabapentin-side-effects-and-efficacy">See all
+<strong>
+2,337
+patient
+evaluations
+</strong>
+</a></p>
+<hr>
+<div class="media-object margin-bottom">
+<div class="media-item"><a class="avatar-link lightview" href="//s3.amazonaws.com/uploads.patientslikeme.com/avatars/7172-original.jpg?AWSAccessKeyId=1KGN9K9HFVT00RDVK1G2&amp;Expires=1489189736&amp;Signature=efl29MkggwIXyk%2FQwyiWNLzjEp0%3D"><img title="Penni" src="//s3.amazonaws.com/uploads.patientslikeme.com/avatars/7172-thumb.jpg?AWSAccessKeyId=1KGN9K9HFVT00RDVK1G2&amp;Expires=1489189736&amp;Signature=RJ%2F1KUjrjyQpOaFrZUUtTDiY%2FXI%3D" alt="7172 thumb" /></a></div>
+<div class="media-content">
+<h2><a href="/patients/view/33823">Penni</a></h2>
+<p>
+300 mg three times daily
+<br>
+since Jan 27, 2017
+</p>
+</div>
+</div>
+<ul class="user-eval-summary">
+<li class="efficacy margin-bottom-quarter">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span>
+Perceived effectiveness
+<span class="purpose">for Nerve pain (neuralgia):</span>
+<strong>Major</strong>
+</li>
+<li class="side-effects margin-bottom">
+<span class="led-light led-light-side-effects"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+Side effects:
+<strong>None</strong>
+</li>
+<li class="advice">
+<a href="/treatment_evaluations/191956">See full evaluation</a>
+</li>
+</ul>
+<hr>
+<div class="media-object margin-bottom">
+<div class="media-item"><a class="avatar-link lightview" href="//s3.amazonaws.com/uploads.patientslikeme.com/avatars/4936-original.jpg?AWSAccessKeyId=1KGN9K9HFVT00RDVK1G2&amp;Expires=1489189736&amp;Signature=4mNq50Fi%2FJw1yTHZO%2BooFvhr5JQ%3D"><img title="Mare" src="//s3.amazonaws.com/uploads.patientslikeme.com/avatars/4936-thumb.jpg?AWSAccessKeyId=1KGN9K9HFVT00RDVK1G2&amp;Expires=1489189736&amp;Signature=iszMb3v7w7B2sdGPzZdd0nPEJGE%3D" alt="4936 thumb" /></a></div>
+<div class="media-content">
+<h2><a href="/patients/view/23114">Mare</a></h2>
+<p>
+4800 mg daily
+<br>
+since Jan 26, 2017
+</p>
+</div>
+</div>
+<ul class="user-eval-summary">
+<li class="efficacy margin-bottom-quarter">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-off"></span>
+Perceived effectiveness
+<span class="purpose">for Pain:</span>
+<strong>Moderate</strong>
+</li>
+<li class="side-effects margin-bottom">
+<span class="led-light led-light-side-effects"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+Side effects:
+<strong>None</strong>
+</li>
+<li class="advice">
+<strong>Advice/Tips</strong>
+Probably cuts 85% of nerve pain.  Would rather not continue to take this as it is an epilepsy drug and am wondering what it is doing to my brain.  New York i...
+<a href="/treatment_evaluations/191772">See full evaluation</a>
+</li>
+</ul>
+<hr>
+<div class="media-object margin-bottom">
+<div class="media-item"><a class="avatar-link lightview" href="//s3.amazonaws.com/uploads.patientslikeme.com/avatars/40465-original.jpg?AWSAccessKeyId=1KGN9K9HFVT00RDVK1G2&amp;Expires=1489189736&amp;Signature=xIKzxrrpWOic1FiOWGCE77TUDWE%3D"><img title="Ladywolf319" src="//s3.amazonaws.com/uploads.patientslikeme.com/avatars/40465-thumb.jpg?AWSAccessKeyId=1KGN9K9HFVT00RDVK1G2&amp;Expires=1489189736&amp;Signature=DwvJQXtyicqbDUwGvcJfUEpXnv8%3D" alt="40465 thumb" /></a></div>
+<div class="media-content">
+<h2><a href="/patients/view/161210">Ladywolf319</a></h2>
+<p>
+1800 mg daily
+<br>
+since Jan 16, 2017
+</p>
+</div>
+</div>
+<ul class="user-eval-summary">
+<li class="efficacy margin-bottom-quarter">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-off"></span>
+Perceived effectiveness
+<span class="purpose">for Allodynia:</span>
+<strong>Moderate</strong>
+</li>
+<li class="side-effects margin-bottom">
+<span class="led-light led-light-side-effects"></span><span class="led-light led-light-side-effects"></span><span class="led-light led-light-side-effects"></span><span class="led-light led-light-off"></span>
+Side effects:
+<strong>Moderate</strong>
+</li>
+<li class="advice">
+<strong>Advice/Tips</strong>
+I&#39;ve been on this for a few yrs now. It has helped a bit more than previous meds, but without the combo of pain meds, natural supplements and going gluten-fr...
+<a href="/treatment_evaluations/190176">See full evaluation</a>
+</li>
+</ul>
+
+
+<hr>
+<div class="sidebar" id="sect-forum-sidebar">
+<h2>What are people saying about Gabapentin?</h2>
+<p>
+There are
+<strong>25,607</strong>
+posts in our forum about
+Gabapentin.
+</p>
+<p>
+<a href="/users/sign_in">Sign in</a>
+or
+<a href="/join">join now</a>
+to view the forums.
+</p>
+</div>
+
+</aside>
+</div>
+</div>
+</div>
+
+</div>
+<div class="is-hidden-visually" id="evaluations" role="tabpanel">
+<div class="tab-panel-wrapper tab-panel-no-header glass-panel">
+<div class="row" id="filters-wrapper">
+<div class="filters_results columns large-16 medium-16">
+<h2>
+250 patient evaluations
+for
+Gabapentin
+</h2>
+<p class="padding-top-half">
+2,333
+members have decided to share their profiles only with other members of PatientsLikeMe.
+</p>
+</div>
+<div class="filters_sort_by columns large-8 medium-8 align-right">
+Sort by:
+<a data-popup-id="evaluations-sort-by" class="button menu-opener" data-fn-click="open_popup" href="#">Most recent</a>
+<ul data-popup-type="menu" data-popup-width="150" id="evaluations-sort-by" style="display: none">
+<li><a href="/treatments/show/279-gabapentin-side-effects-and-efficacy?brand=f&amp;sort=helpfulness#evaluations">Helpfulness</a></li>
+<li><a href="/treatments/show/279-gabapentin-side-effects-and-efficacy?brand=f&amp;sort=most-recent#evaluations">Most Recent</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div data-treatment-id="279" id="evaluations-list">
+<div class="content-panel"><div class="evaluation-group is-divided">
+<div class="row padding-vertical margin-top">
+<div class="columns large-6 medium-6"><strong><a href="/patients/view/33823">Penni</a></strong>
+<div class="clearfix"><div class="nugget-block nugget-minimal plm-nugget">
+<a class="avatar-link lightview" href="//s3.amazonaws.com/uploads.patientslikeme.com/avatars/7172-original.jpg?AWSAccessKeyId=1KGN9K9HFVT00RDVK1G2&amp;Expires=1489127275&amp;Signature=3iARGMjRetWWg%2FxqAEiz5ccxwac%3D"><img title="Penni" src="//s3.amazonaws.com/uploads.patientslikeme.com/avatars/7172-thumb.jpg?AWSAccessKeyId=1KGN9K9HFVT00RDVK1G2&amp;Expires=1489127275&amp;Signature=QwBqZPdXJS3mPlp6siWNdSesl5Q%3D" alt="7172 thumb" /></a>
+<dl class="icon-set icons-hq pd  minimal pd-minimal">
+<dt>Penni</dt>
+<dd class="patient-sex sex-f">
+<span>Sex:</span>
+F
+</dd>
+<dd class="quality q-1">
+Data Quality: 1 star
+</dd>
+<dd class="rx">
+<i class="rx-status on">
+<b>On</b>
+</i>
+</dd>
+<dd class="stickman head none">
+Mouth/throat: none
+</dd>
+<dd class="stickman arms mild">
+Arms: mild
+</dd>
+<dd class="stickman torso none">
+Chest: none
+</dd>
+<dd class="stickman legs none">
+Legs: none
+</dd>
+<dd class="instantme instantme-good">
+<small>I am:</small>
+g
+</dd>
+
+</dl>
+
+<div class="primary-condition-label">
+<small>I have:</small>
+<div class="lbl">Parkinson's</div>
+</div>
+<a class="nugget-link" title="Click to go to the profile page" aria-label="Go to profile" href="/patients/view/33823"></a>
+<a data-popup-url="/patients/ajax_patient_tooltip/33823" title="Click to see a preview of this patient" class="nugget-tooltip-opener" role="button" aria-label="See a profile preview" data-fn-click="open_popup" href="#"><span></span></a>
+</div>
+</div>
+<p class="margin-top"><a href="/members/33823/treatment_histories/815675">See Penni&#39;s full Gabapentin history</a></p>
+</div>
+<div class="eval-details columns large-18 medium-18">
+<h3 class="tertiary-title">
+Jan 27, 2017
+<span class="helptext">(Started Jul 01, 2010)</span>
+</h3>
+<div class="margin-bottom-quarter"><ul class="okgo">
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Effectiveness</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span>
+Major
+<span class="helptext">(for Nerve pain (neuralgia))</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Side effects</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-side-effects"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+None
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Adherence</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span>
+Always
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Burden</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-burden"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+Not at all hard to take
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="margin-bottom-quarter">
+<strong>Dosage:</strong>
+300 mg
+Three times daily
+</div>
+<hr>
+<ul class="list-inline" data-widget="helpful_marks">
+<li>
+<span class="icon-thumb icon-spacer align-text-bottom icon"></span>
+<span class="text-smallest">0</span>
+<span class="is-hidden-visually">helpful marks</span>
+</li>
+<li>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="evaluation-group is-divided">
+<div class="row padding-vertical margin-top">
+<div class="columns large-6 medium-6"><strong><a href="/patients/view/23114">Mare</a></strong>
+<div class="clearfix"><div class="nugget-block nugget-minimal plm-nugget">
+<a class="avatar-link lightview" href="//s3.amazonaws.com/uploads.patientslikeme.com/avatars/4936-original.jpg?AWSAccessKeyId=1KGN9K9HFVT00RDVK1G2&amp;Expires=1489127275&amp;Signature=iEARF34BEkeHZhofWSIsXEypOKI%3D"><img title="Mare" src="//s3.amazonaws.com/uploads.patientslikeme.com/avatars/4936-thumb.jpg?AWSAccessKeyId=1KGN9K9HFVT00RDVK1G2&amp;Expires=1489127275&amp;Signature=OxfpDMJbPHoxzTIN12dyVtVyiDQ%3D" alt="4936 thumb" /></a>
+<dl class="icon-set icons-hq ms  minimal ms-minimal">
+<dt>Mare</dt>
+<dd class="patient-sex sex-f">
+<span>Sex:</span>
+F
+</dd>
+<dd class="quality q-2">
+Data Quality: 2 stars
+</dd>
+<dd class="sensation-mild">
+Sensation: Mild
+</dd>
+<dd class="overall-none">
+Overall: None
+</dd>
+<dd class="stickman cognition none">
+Cognition: none
+</dd>
+<dd class="stickman vision none">
+Vision: none
+</dd>
+<dd class="stickman speech none">
+Speech: none
+</dd>
+<dd class="stickman swallowing mild">
+Swallowing: mild
+</dd>
+<dd class="stickman upper_limb none">
+Upper limb: none
+</dd>
+<dd class="stickman walking none">
+Walking: none
+</dd>
+<dd class="instantme instantme-good">
+<small>I am:</small>
+g
+</dd>
+
+</dl>
+
+<div class="primary-condition-label">
+<small>I have:</small>
+<div class="lbl">MS</div>
+</div>
+<a class="nugget-link" title="Click to go to the profile page" aria-label="Go to profile" href="/patients/view/23114"></a>
+<a data-popup-url="/patients/ajax_patient_tooltip/23114" title="Click to see a preview of this patient" class="nugget-tooltip-opener" role="button" aria-label="See a profile preview" data-fn-click="open_popup" href="#"><span></span></a>
+</div>
+</div>
+<p class="margin-top"><a href="/members/23114/treatment_histories/55265">See Mare&#39;s full Gabapentin history</a></p>
+</div>
+<div class="eval-details columns large-18 medium-18">
+<h3 class="tertiary-title">
+Jan 26, 2017
+<span class="helptext">(Started Jan 01, 2008)</span>
+</h3>
+<div class="margin-bottom-quarter"><ul class="okgo">
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Effectiveness</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-off"></span>
+Moderate
+<span class="helptext">(for Pain)</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Side effects</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-side-effects"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+None
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Adherence</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span>
+Always
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Burden</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-burden"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+Not at all hard to take
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="margin-bottom-quarter">
+<strong>Dosage:</strong>
+4800 mg
+Daily
+</div>
+<div class="margin-bottom-quarter">
+<strong>Advice & Tips:</strong>
+Probably cuts 85% of nerve pain.  Would rather not continue to take this as it is an epilepsy drug and am wondering what it is doing to my brain.  New York is on the Opiod bandwagon and all doctors are afraid of prescribing anything other than hydrocodone.  I would rather take Percocet and cut 95% of all my nerve pain and not take this anymore.
+</div>
+<div class="margin-bottom-quarter">
+<strong>Cost:</strong>
+$25-49 monthly
+</div>
+<hr>
+<h3 class="tertiary-title">
+Feb 28, 2011
+<span class="helptext">(Started Jan 01, 2008)</span>
+</h3>
+<div class="margin-bottom-quarter"><ul class="okgo">
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Effectiveness</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span>
+Major
+<span class="helptext">(for Pain)</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Side effects</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-side-effects"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+None
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Adherence</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span>
+Always
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Burden</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-burden"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+Not at all hard to take
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="margin-bottom-quarter">
+<strong>Dosage:</strong>
+3600 mg
+Daily
+</div>
+<div class="margin-bottom-quarter">
+<strong>Cost:</strong>
+&lt; $25 monthly
+</div>
+<hr>
+<h3 class="tertiary-title">
+Sep 22, 2010
+<span class="helptext">(Started Jan 01, 2008)</span>
+</h3>
+<div class="margin-bottom-quarter"><ul class="okgo">
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Effectiveness</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-off"></span>
+Moderate
+<span class="helptext">(for Pain)</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Side effects</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-side-effects"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+None
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Adherence</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span>
+Always
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Burden</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-burden"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+Not at all hard to take
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="margin-bottom-quarter">
+<strong>Dosage:</strong>
+3600 mg
+Daily
+</div>
+<div class="margin-bottom-quarter">
+<strong>Cost:</strong>
+&lt; $25 monthly
+</div>
+<hr>
+<h3 class="tertiary-title">
+Apr 29, 2010
+<span class="helptext">(Started Jan 01, 2008)</span>
+</h3>
+<div class="margin-bottom-quarter"><ul class="okgo">
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Effectiveness</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-off"></span>
+Moderate
+<span class="helptext">(for Pain)</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Side effects</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-side-effects"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+None
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Adherence</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span>
+Always
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Burden</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-burden"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+Not at all hard to take
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="margin-bottom-quarter">
+<strong>Dosage:</strong>
+3600 mg
+Daily
+</div>
+<div class="margin-bottom-quarter">
+<strong>Cost:</strong>
+&lt; $25 monthly
+</div>
+<hr>
+<h3 class="tertiary-title">
+Sep 10, 2008
+<span class="helptext">(Started Jan 01, 2008)</span>
+</h3>
+<div class="margin-bottom-quarter"><ul class="okgo">
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Effectiveness</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-off"></span>
+Moderate
+<span class="helptext">(for Pain)</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Side effects</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-side-effects"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+None
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Adherence</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span>
+Always
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Burden</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-burden"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+Not at all hard to take
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="margin-bottom-quarter">
+<strong>Dosage:</strong>
+3600 mg
+Daily
+</div>
+<div class="margin-bottom-quarter">
+<strong>Advice & Tips:</strong>
+Probably cuts 85% of nerve pain.  
+</div>
+<div class="margin-bottom-quarter">
+<strong>Cost:</strong>
+&lt; $25 monthly
+</div>
+<hr>
+<ul class="list-inline" data-widget="helpful_marks">
+<li>
+<span class="icon-thumb icon-spacer align-text-bottom icon"></span>
+<span class="text-smallest">2</span>
+<span class="is-hidden-visually">helpful marks</span>
+</li>
+<li>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="evaluation-group is-divided">
+<div class="row padding-vertical margin-top">
+<div class="columns large-6 medium-6"><strong><a href="/patients/view/161210">Ladywolf319</a></strong>
+<div class="clearfix"><div class="nugget-block nugget-minimal plm-nugget">
+<a class="avatar-link lightview" href="//s3.amazonaws.com/uploads.patientslikeme.com/avatars/40465-original.jpg?AWSAccessKeyId=1KGN9K9HFVT00RDVK1G2&amp;Expires=1489127275&amp;Signature=3rSHtoRV4JHbHknwiv2DnFV7I14%3D"><img title="Ladywolf319" src="//s3.amazonaws.com/uploads.patientslikeme.com/avatars/40465-thumb.jpg?AWSAccessKeyId=1KGN9K9HFVT00RDVK1G2&amp;Expires=1489127275&amp;Signature=rPxPMkNYRTVGV%2BlGRja8xlSyRCY%3D" alt="40465 thumb" /></a>
+<dl class="icon-set icons-hq gp minimal gp-minimal">
+<dt>Ladywolf319</dt>
+<dd class="quality q-0">
+Data Quality: 0 stars
+</dd>
+<dd class="demographics">
+<ul>
+<li class="patient-sex">
+<small>Gender:</small>
+F
+</li>
+<li class="age">
+<small>Age:</small>
+32
+</li>
+</ul>
+</dd>
+<dd class="community moderate ">
+<small>Condition:</small>
+<span>CRPS II</span>
+<i>
+29
+<small>additional condition(s)</small>
+</i>
+</dd>
+<dd class="qol">
+<small>Quality of life:</small>
+<ul class="adult">
+<li class="social social-severe">
+<small>Social:</small>
+Severe
+</li>
+<li class="mental mental-mild">
+<small>Mental:</small>
+Mild
+</li>
+<li class="physical physical-moderate">
+<small>Physical:</small>
+Moderate
+</li>
+</ul>
+</dd>
+<dd class="instantme instantme-verybad">
+<small>I am:</small>
+vb
+</dd>
+
+</dl>
+
+<div class="primary-condition-label">
+<small>I have:</small>
+<div class="lbl">CRPS II</div>
+</div>
+<a class="nugget-link" title="Click to go to the profile page" aria-label="Go to profile" href="/patients/view/161210"></a>
+<a data-popup-url="/patients/ajax_patient_tooltip/161210" title="Click to see a preview of this patient" class="nugget-tooltip-opener" role="button" aria-label="See a profile preview" data-fn-click="open_popup" href="#"><span></span></a>
+</div>
+</div>
+<p class="margin-top"><a href="/members/161210/treatment_histories/668585">See Ladywolf319&#39;s full Gabapentin history</a></p>
+</div>
+<div class="eval-details columns large-18 medium-18">
+<h3 class="tertiary-title">
+Jan 16, 2017
+<span class="helptext">(Started Jan 15, 2013)</span>
+</h3>
+<div class="margin-bottom-quarter"><ul class="okgo">
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Effectiveness</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+Slight
+<span class="helptext">(for Pain)</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Effectiveness</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+Slight
+<span class="helptext">(for Nerve pain in left leg)</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Effectiveness</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+Slight
+<span class="helptext">(for Nerve pain (neuralgia))</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Effectiveness</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+Slight
+<span class="helptext">(for Fibromyalgia)</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Effectiveness</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-off"></span>
+Moderate
+<span class="helptext">(for CRPS II (Complex regional pain syndrome type II))</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Effectiveness</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-off"></span>
+Moderate
+<span class="helptext">(for Allodynia)</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Side effects</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-side-effects"></span><span class="led-light led-light-side-effects"></span><span class="led-light led-light-side-effects"></span><span class="led-light led-light-off"></span>
+Moderate
+<span class="helptext">(Nausea, Speech ataxia-problems coordinating speech, Loss of sex drive (libido), Brain fog, Balance problems, Dizziness, Memory and cognition problems)</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Adherence</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span>
+Always
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Burden</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-burden"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+Not at all hard to take
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="margin-bottom-quarter">
+<strong>Dosage:</strong>
+1800 mg
+Daily
+</div>
+<div class="margin-bottom-quarter">
+<strong>Advice & Tips:</strong>
+I've been on this for a few yrs now. It has helped a bit more than previous meds, but without the combo of pain meds, natural supplements and going gluten-free, it is only a mild improvement. 
+I can definitely tell when I'm an hour or 2 late for taking it because the pain creeps in significantly. This makes me worry that it's more of a drug-dependence (withdrawl) for my body, than my typical pain, but bc I get all over nerve pain, it's hard to differentiate. I don't have this problem with my pain meds and have also been on them for years.
+Also, my memory and cognitive functioning has been decreasing and it's very difficult to tell if that's med related or something else is going on.
+As far as, energy, it continues to deplete, but that could be Thyroid related or something else.
+I still prefer these over the other meds I've tried for allodynia, nerve pain and Fibromyalgia. 
+</div>
+<div class="margin-bottom-quarter">
+<strong>Cost:</strong>
+&lt; $25 monthly
+</div>
+<hr>
+<h3 class="tertiary-title">
+Jan 16, 2014
+<span class="helptext">(Started Jan 15, 2013)</span>
+</h3>
+<div class="margin-bottom-quarter"><ul class="okgo">
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Effectiveness</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+None
+<span class="helptext">(for Nerve pain in left leg)</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Effectiveness</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+None
+<span class="helptext">(for Nerve pain (neuralgia))</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Effectiveness</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-off"></span>
+Moderate
+<span class="helptext">(for Fibromyalgia)</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Effectiveness</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-off"></span>
+Moderate
+<span class="helptext">(for Pain)</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Effectiveness</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-off"></span>
+Moderate
+<span class="helptext">(for Allodynia)</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Effectiveness</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-efficacy"></span><span class="led-light led-light-off"></span>
+Moderate
+<span class="helptext">(for CRPS II (Complex regional pain syndrome type II))</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Side effects</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-side-effects"></span><span class="led-light led-light-side-effects"></span><span class="led-light led-light-side-effects"></span><span class="led-light led-light-off"></span>
+Moderate
+<span class="helptext">(Nausea, Speech ataxia-problems coordinating speech, Loss of sex drive (libido), Brain fog, Balance problems, Dizziness, Memory and cognition problems)</span>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Adherence</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span><span class="led-light led-light-adherence"></span>
+Always
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="columns small-8 medium-6 large-4">
+<span>Burden</span>
+</div>
+<div class="columns small-16 medium-18 large-20">
+<span class="led-light led-light-burden"></span><span class="led-light led-light-burden"></span><span class="led-light led-light-off"></span><span class="led-light led-light-off"></span>
+A little hard to take
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="margin-bottom-quarter">
+<strong>Dosage:</strong>
+1800 mg
+Daily
+</div>
+<div class="margin-bottom-quarter">
+<strong>Advice & Tips:</strong>
+
+
+Make sure that you eat a solid meal before taking and don't plan time drive. The nausea and dizziness is enough to make you uncoordinated. For me luckily, the side effects, other than the nausea, have decreased a little.
+</div>
+<div class="margin-bottom-quarter">
+<strong>Cost:</strong>
+&lt; $25 monthly
+</div>
+<hr>
+<ul class="list-inline" data-widget="helpful_marks">
+<li>
+<span class="icon-thumb icon-spacer align-text-bottom icon"></span>
+<span class="text-smallest">0</span>
+<span class="is-hidden-visually">helpful marks</span>
+</li>
+<li>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="section-pagination">
+<div class="row">
+<div class="columns large-8 medium-8 align-left">
+<small class="helptext">
+Last updated:
+<time datetime="2017-02-07T06:27:56+00:00">February  7, 2017</time>
+</small>
+
+</div>
+<div class="columns large-16 medium-16">
+<span class="padding-horizontal">
+Showing 3 of 250 patient evaluations for Gabapentin
+</span>
+<div class="pagination inline-block"><a class="button icon-only is-not-rwd previous_page" disabled="true"><span class="icon icon-director-left">Previous page</span></a> <em class="current">1</em> <a rel="next" href="/treatments/show/279-gabapentin-side-effects-and-efficacy?brand=f&amp;page=2&amp;size=3#evaluations">2</a> <a href="/treatments/show/279-gabapentin-side-effects-and-efficacy?brand=f&amp;page=3&amp;size=3#evaluations">3</a> <span class="gap">&hellip;</span> <a href="/treatments/show/279-gabapentin-side-effects-and-efficacy?brand=f&amp;page=84&amp;size=3#evaluations">84</a> <a class="button icon-only is-not-rwd next_page" rel="next" href="/treatments/show/279-gabapentin-side-effects-and-efficacy?brand=f&amp;page=2&amp;size=3#evaluations"><span class="icon icon-director-right">Next page</span></a></div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="island-object align-right-medium padding-horizontal hide-for-small" id="back-to-top">
+<a href="#top">
+<span class="arrow-inline arrow-up ">▲</span>
+Back to top
+</a>
+</div>
+</div>
+</div>
+<div class="sticky-footer-push"></div>
+</div>
+<div class="hide-for-tablet bg-dense-fog"><div class="promotional-panel">
+<footer class="site-footer row">
+<div class="columns medium-24 padding-none">
+<div class="columns medium-12 align-left medium-push-12 margin-bottom">
+<div class="row">
+<div class="columns small-margin">
+<img alt="PLM logo" src="//dy82vckl8b34w.cloudfront.net/assets/logo_poem_plm-4aa6039722c90f6c4e2fbd0a538baacd.png" />
+</div>
+</div>
+</div>
+<div class="columns medium-3 align-left medium-pull-12 small-12 margin-bottom-half">
+<ul class="footer-list">
+<p class="helptext margin-bottom-quarter">Company</p>
+<li class="align-left padding-vertical-quarter"><a href="/about">About us</a></li>
+<li class="align-left padding-vertical-quarter"><a target="_blank" href="http://blog.patientslikeme.com">Blog</a></li>
+<li class="align-left padding-vertical-quarter"><a href="/about/careers">Careers</a></li>
+<li class="align-left padding-vertical-quarter"><a href="http://support.patientslikeme.com/">FAQs</a></li>
+<li class="align-left padding-vertical-quarter"><a href="http://support.patientslikeme.com/hc/en-us/articles/201245750">Funding</a></li>
+<li class="align-left padding-vertical-quarter"><a href="http://news.patientslikeme.com">News</a></li>
+</ul>
+</div>
+<div class="columns medium-3 align-left medium-pull-12 small-12">
+<ul class="footer-list">
+<p class="helptext margin-bottom-quarter">Philosophy</p>
+<li class="align-left padding-vertical-quarter"><a href="/research/dataforgood">Data for good</a></li>
+<li class="align-left padding-vertical-quarter"><a href="/about/openness">Openness</a></li>
+<li class="align-left padding-vertical-quarter"><a href="/about/privacy">Privacy</a></li>
+<li class="align-left padding-vertical-quarter"><a href="/about/user_agreement">User agreement</a></li>
+</ul>
+</div>
+<div class="columns medium-3 small-24 align-left end medium-pull-12 margin-bottom-double">
+<ul class="footer-list">
+<p class="helptext margin-bottom-quarter">Contact</p>
+<li class="align-left padding-vertical-quarter"><a href="/about/contact">Contact us</a></li>
+<li class="align-left padding-vertical-quarter"><a href="http://support.patientslikeme.com/hc/en-us/sections/200247954">Crisis resources</a></li>
+</ul>
+</div>
+<div class="columns medium-12 medium-offset-12 small-offset-1 footer-social padding-left-none">
+<div class="columns">
+<a class="icon icon-fb" href="https://www.facebook.com/PatientsLikeMe/">https://www.facebook.com/PatientsLikeMe/</a>
+<a class="icon icon-twitter-gray" href="https://twitter.com/patientslikeme">https://twitter.com/patientslikeme</a>
+<a class="icon icon-linkedin" href="https://www.linkedin.com/company/patientslikeme">https://www.linkedin.com/company/patientslikeme</a>
+<a class="icon icon-youtube-gray" href="https://www.youtube.com/PatientsLikeMe">https://www.youtube.com/PatientsLikeMe</a>
+<a class="icon icon-instagram" href="https://www.instagram.com/patientslikemeinc/">https://www.instagram.com/patientslikemeinc/</a>
+</div>
+<div class="columns margin-top">
+<p class="helptext">
+(c) 2005-2016 PatientsLikeMe. All Rights Reserved. Information on PatientsLikeMe.com is reported by our members and is not medical advice.
+</p>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+
+<div class="pop is-hidden" id="swirl" role="alert">
+<span class="icon spinner"></span>
+Please wait…
+</div>
+
+<div class="rich-content-editor-popup conformtastic basic" id="rich-content-editor-popup-add-mention" style="display: none">
+<fieldset>
+<label for="user-text">User</label>
+<input class="login large-24 medium-24" id="user-text" maxlength="255" placeholder="Find a user" type="search">
+</fieldset>
+<div class="button-array">
+<button class="ok button button-primary-action">Done</button>
+</div>
+</div>
+
+
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','//connect.facebook.net/en_US/fbevents.js');
+  
+  fbq('init', '1675762962636220');
+  fbq('track', "PageView", { environment: "production", is_member: false });
+</script>
+<noscript>
+<img height="1" src="https://www.facebook.com/tr?id=1675762962636220&amp;ev=PageView&amp;noscript=1" style="display:none" width="1">
+</noscript>
+
+<script>
+  try {
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setDomainName', 'patientslikeme.com']);
+    _gaq.push(['_setAccount', 'UA-6855580-1']);
+  
+    _gaq.push(['_setCustomVar', 1, 'Member Type',
+          'not_logged_in',
+          2                 // Sets the scope to session-level.
+     ]);
+    _gaq.push(['_setCustomVar', 2, 'Signup Cohort',
+          'not_logged_in',
+          2                 // Sets the scope to session-level.
+     ]);
+    _gaq.push(['_setCustomVar', 4, 'Days Since Signup',
+          '-1',
+          2                 // Sets the scope to session-level.
+     ]);
+    _gaq.push(['_setCustomVar', 5, 'metric_guid',
+          '1d6a459c-1997-4ca6-98a7-9a304fcb6805',
+          1                 // Sets the scope to visitor-level.
+     ]);
+  
+    if(false) {
+      _gaq.push(['_setCustomVar', 3, '',
+          '',
+          3                 // Sets the scope to page-level.
+      ]);
+    }
+  
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_trackPageLoadTime']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  } catch(err) {console.log('ga error');}
+</script>
+
+<script src="//dy82vckl8b34w.cloudfront.net/assets/application-761ee37b391b53c7f570eefba80482f7.js"></script>
+<script src="//dy82vckl8b34w.cloudfront.net/assets/chartsjs/charts_manifest-902763629ec787e0ac8bbd9596afed7f.js"></script>
+<script src="//dy82vckl8b34w.cloudfront.net/assets/chartsjs/piechart_manifest-a8fb10e77d30b420a8c385c22221f545.js"></script>
+<script src="https://www.google.com/jsapi"></script>
+<script>
+  (function() {
+    $(function() {
+      var loading;
+      loading = false;
+      return $on('click', '.paging-ui a, .filters_sort_by .mnu a', function(e) {
+        var page, sort, tId, url;
+        e.preventDefault();
+        if (loading) {
+          return;
+        }
+        page = _.last(this.attr('href').match(/page=(\d+)/) || '');
+        tId = $('#evaluations-list').data('treatmentId');
+        url = '/treatments/' + tId + '/evaluations_ajax/?size=3&page=' + (page || '1');
+        sort = _.last(this.attr('href').match(/sort=(.+)/) || '');
+        if (sort) {
+          url = url + "&sort=" + sort;
+        }
+        loading = true;
+        return $.get(url, function(response) {
+          $('#evaluations').html(response);
+          return loading = false;
+        });
+      });
+    });
+  
+  }).call(this);
+</script>
+
+<script>
+  // options: https://developers.google.com/custom-search/docs/js/cselement-reference
+  var autoCompletionOptions = {
+    'maxCompletions' : 10,
+    'styleOptions' : {
+      'xOffset' : 0
+  }};
+  
+  google.load('search', '1', {language : 'en', nocss : true});
+  google.setOnLoadCallback(function() {
+    google.search.CustomSearchControl.attachAutoCompletionWithOptions(
+      '012580686871807717921:mf0ormpzdl4', document.getElementById('site-search-input-883'), 'site-search-form-517',
+      autoCompletionOptions);
+  });
+</script>
+
+<script>
+  (function() {
+    $('.nav-wrapper').find('.condition-filter-menu-js').attr('id', 'condition-filter-menu').hide().end().find('[data-popup-id="condition-filter-menu"]').removeClass('is-hidden');
+  
+  }).call(this);
+</script>
+
+
+
+<div class="browser-deprecation-notice media-object media-middle is-hidden" data-initialize="browser_deprecation_notice.initialize" data-widget="browser_deprecation_notice">
+<div class="media-item">
+<a data-fn-click="browser_deprecation_notice.dismiss" class="button icon-only has-tooltip " href="#"><span aria-hidden="true" class="icon-button-context" data-icon="×"></span><small role="tooltip" class=" is-tooltip">Dismiss this notification</small></a>
+</div>
+<div class="media-content">
+PatientsLikeMe would like to remind you that your browser is out of date and many features of the website may not function as expected.
+<div class="padding-top-quarter">
+<a class="browser-deprecation-notice-link" href="http://support.patientslikeme.com/hc/en-us/articles/201187374">Please update your browser</a>
+for more security and a better experience.
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
