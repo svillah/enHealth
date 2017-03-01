@@ -3,7 +3,7 @@ import json
 import requests
 from bs4 import BeautifulSoup
 
-f = open('drugData.json', 'a+')
+f = open('drugData.json', 'w+')
 
 def initializeSoup(url):
     request = requests.get(url)
@@ -27,11 +27,11 @@ def getDrugData(url):
     brandName = brandNames.find_all('a')
     f.write("Brand Names:")
     for brand in brandNames:
-        f.write(brand.string.rstrip(),) #rstrip removes all new lines \n
+        f.write(brand.string.rstrip().encode('utf-8'),) #rstrip removes all new lines \n
 
     # finds drug description
     desc = soup.find("p",{"itemprop":"description"})
-    f.write("\nGeneral Description: " + desc.string)
+    f.write("\nGeneral Description: " + desc.string.encode('utf-8'))
 
     # finds side effects of taking drug
     sideEffects = soup.find_all("tr", {"data-yah-key":"side_effect"})
@@ -39,7 +39,7 @@ def getDrugData(url):
 
     for sideEffect in sideEffects:
         lis = sideEffect.find("span", {"itemprop":"name"})
-        f.write(lis.string)
+        f.write(lis.string.encode('utf-8'))
     f.write("\n")
 
     # below are not implemented
@@ -65,8 +65,8 @@ soup = initializeSoup(website)
 drugTable = soup.find("table", {"id":"tbl-treatments"})
 drugs = drugTable.findChildren('tr')
 
-#for i in range(1, len(drugs)):
-for i in range(1, 3): # use code above for actual implementation, current for test
+for i in range(1, len(drugs)):
+#for i in range(1, 3): # use code above for actual implementation, current for test
     for drugUrl in drugs[i].findChildren("a"):
         url = drugUrl.get("href")
         fullUrl = "https://www.patientslikeme.com" + url
