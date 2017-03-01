@@ -1,180 +1,105 @@
-
-Generic Name: Gabapentin
-Brand Names:NeurontinGabatinGraliseRatio-GabapentinAPO-GabapentinDOM-GabapentinNupentinEpleptinPMS-GabapentinGabaran
-General Description: 
+﻿
+{ 
+"GenericName" : "Gabapentin"
+"BrandName" : NeurontinGabatinGraliseRatio-GabapentinAPO-GabapentinDOM-GabapentinNupentinEpleptinPMS-GabapentinGabaran
+"GeneralDescriptions" : 
 Gabapentin is an anticonvulsant medication used as an adjunct treatment for partial seizures and for the management of postherpetic neuralgia and neuropathic pain.
-Side Effects: Weight gainFatigueSleepinessDrowsinessDizzinessBrain fog
-
-Generic Name: Duloxetine
-Brand Names:CymbaltaCymgenYentreveYelate
-General Description: 
+"SideEffectsList" : "Weight gain", "Fatigue", "Sleepiness", "Drowsiness", "Dizziness", "Brain fog", 
+},
+{ 
+"GenericName" : "Duloxetine"
+"BrandName" : CymbaltaCymgenYentreveYelate
+"GeneralDescriptions" : 
 Duloxetine is a selective serotonin and norepinephrine reuptake inhibitor (SSNRI). It may be used for depression, general anxiety disorder, pain associated with diabetic neuropathy and fibromyalgia.
-Side Effects: NauseaWeight gainDizzinessSex drive (libido) decreasedDry mouthSweating increased
-
-Generic Name: Pregabalin
-Brand Names:LyricaMaxgalinProvelyn
-General Description: 
+"SideEffectsList" : "Nausea", "Weight gain", "Dizziness", "Sex drive (libido) decreased", "Dry mouth", "Sweating increased", 
+},
+{ 
+"GenericName" : "Pregabalin"
+"BrandName" : LyricaMaxgalinProvelyn
+"GeneralDescriptions" : 
 Pregabalin is an analgesic and anti-convulsant drug that may be used to manage pain associated with diabetic peripheral neuropathy, postherpetic (shingles) neuralgia, or as an adjunctive treatment for partial-onset seizure disorder in adults and for the management of fibromyalgia.
-Side Effects: Weight gainDizzinessBrain fogFatigueBlurry visionProblems concentrating
-
-Generic Name: Baclofen
-Brand Names:Mylan-BaclofenDOM-BaclofenStelaxGabalonMiorelOnelaxant RSpinaxBacloparKemstro
-General Description: 
+"SideEffectsList" : "Weight gain", "Dizziness", "Brain fog", "Fatigue", "Blurry vision", "Problems concentrating", 
+},
+{ 
+"GenericName" : "Baclofen"
+"BrandName" : Mylan-BaclofenDOM-BaclofenStelaxGabalonMiorelOnelaxant RSpinaxBacloparKemstro
+"GeneralDescriptions" : 
 Baclofen is a skeletal muscle relaxant and anti-spastic agent used for the treatment of reversible spasticity associated with multiple sclerosis or spinal cord lesions.
-Side Effects: FatigueSleepinessDrowsinessMuscle weaknessDry mouthConstipation
-
-Generic Name: Clonazepam
-Brand Names:KlonopinRivotrilPMS-ClonazepamAPO ClonazepamClonexKlonopin WaferPaxamRivotril dropsDOM-ClonazepamClonotril
-General Description: 
+"SideEffectsList" : "Fatigue", "Sleepiness", "Drowsiness", "Muscle weakness", "Dry mouth", "Constipation", 
+},
+{ 
+"GenericName" : "Clonazepam"
+"BrandName" : KlonopinRivotrilPMS-ClonazepamAPO ClonazepamClonexKlonopin WaferPaxamRivotril dropsDOM-ClonazepamClonotril
+"GeneralDescriptions" : 
 Clonazepam, a benzodiazepine, is used alone or as an adjunct in the treatment of seizure disorders and for panic disorders. It may also be used for restless leg syndrome, neuralgia, multifocal tic disorder, parkinsonian dysarthria, bipolar disorder and as an adjunct in treatment of schizophrenia.
-Side Effects: DrowsinessSleepinessGroggy in morningFatigueExcessive daytime sleepiness (somnolence)Sedation
-
-Generic Name: Levothyroxine
-Brand Names:SynthroidLevoxylThyroxineLevothroidL-ThyroxineEltroxinEuthyroxTirosintLannett LevothyroxineEutiroxUnithroidOroxineThyraxLetroxThyronormProthyrid
-General Description: 
+"SideEffectsList" : "Drowsiness", "Sleepiness", "Groggy in morning", "Fatigue", "Excessive daytime sleepiness (somnolence)", "Sedation", 
+},
+{ 
+"GenericName" : "Levothyroxine"
+"BrandName" : SynthroidLevoxylThyroxineLevothroidL-ThyroxineEltroxinEuthyroxTirosintLannett LevothyroxineEutiroxUnithroidOroxineThyraxLetroxThyronormProthyrid
+"GeneralDescriptions" : 
 Levothyroxine is a synthetic form of the human hormone thyroxine. The drug is used to treat hypothyroidism (underactive thyroid), which can lead to weight gain, depression, and pain. 
-Side Effects: FatigueHair lossWeight gainHeadachesHeart palpitationsNausea
-
-Generic Name: Glatiramer acetate
-Brand Names:CopaxoneGlatopa
-General Description: 
+"SideEffectsList" : "Fatigue", "Hair loss", "Weight gain", "Headaches", "Heart palpitations", "Nausea", 
+},
+{ 
+"GenericName" : "Glatiramer acetate"
+"BrandName" : CopaxoneGlatopa
+"GeneralDescriptions" : 
 Glatiramer acetate combines four amino acids including L-alanine, L-glutamic acid, L-lysine and L-tyrosine. It is used for Relapsing-Remitting Multiple Sclerosis (RRMS) to reduce the frequency and severity of relapses. It is administered as a subcutaneous injection.
-Side Effects: Injection site reactionInjection site painInjection site itchingLumps and bumpsRednessBruising
-
-Generic Name: Tramadol
-Brand Names:UltramTramadol ERUltram ERTramadol SRTriduralZydolTramal SRRaliviaRyzoltTramadinZytram XLZydol SRTramahexal SRZamadol SRDololDolzamTramazacTramiumConzipDurellaMabronMandolginTradorec XLTramulief SRXydolMaxitram SR
-General Description: 
+"SideEffectsList" : "Injection site reaction", "Injection site pain", "Injection site itching", "Lumps and bumps", "Redness", "Bruising", 
+},
+{ 
+"GenericName" : "Tramadol"
+"BrandName" : UltramTramadol ERUltram ERTramadol SRTriduralZydolTramal SRRaliviaRyzoltTramadinZytram XLZydol SRTramahexal SRZamadol SRDololDolzamTramazacTramiumConzipDurellaMabronMandolginTradorec XLTramulief SRXydolMaxitram SR
+"GeneralDescriptions" : 
 Tramadol is an opioid analgesic used for the relief of moderate to moderately-severe pain. Extended release formulations are indicated for patients requiring around-the-clock management of moderate to moderately-severe pain for an extended period of time.
-Side Effects: ConstipationNauseaDrowsinessDry mouthDizzinessFatigue
-
-Generic Name: Bupropion
-Brand Names:Wellbutrin XLWellbutrinWellbutrin SRBupropion XLBupropion SRBudeprion XLBudeprion SRAplenzinZybanVoxraElontrilForfivo XLZetronNovo-Bupropion
-General Description: 
+"SideEffectsList" : "Constipation", "Nausea", "Drowsiness", "Dry mouth", "Dizziness", "Fatigue", 
+},
+{ 
+"GenericName" : "Bupropion"
+"BrandName" : Wellbutrin XLWellbutrinWellbutrin SRBupropion XLBupropion SRBudeprion XLBudeprion SRAplenzinZybanVoxraElontrilForfivo XLZetronNovo-Bupropion
+"GeneralDescriptions" : 
 Bupropion, a norepinephrine and dopamine reuptake inhibitor (NDRI) antidepressant is used for the treatment of major depressive disorder, including seasonal affective disorder, and as an adjunct in smoking cessation. It may also be used for attention-deficit/hyperactivity and bipolar disorders. 
-Side Effects: Dry mouthAnxious moodWeight gainInsomniaHeadachesConstipation
-
-Generic Name: Lamotrigine
-Brand Names:LamictalLamictal XRLamictal BlueApo-LamotrigineLamictal OrangeEpitecLamictinLamictal ODTLamictal Starter Kit (Orange)LamitorLamezLamictal GreenLamictal ODT Orange Titration KitLamogineLamolepLamotrigine XRLamictal ODT Blue Titration KitLamictal ODT Green Titration KitLamictal Starter Kit (Blue)
-General Description: 
+"SideEffectsList" : "Dry mouth", "Anxious mood", "Weight gain", "Insomnia", "Headaches", "Constipation", 
+},
+{ 
+"GenericName" : "Lamotrigine"
+"BrandName" : LamictalLamictal XRLamictal BlueApo-LamotrigineLamictal OrangeEpitecLamictinLamictal ODTLamictal Starter Kit (Orange)LamitorLamezLamictal GreenLamictal ODT Orange Titration KitLamogineLamolepLamotrigine XRLamictal ODT Blue Titration KitLamictal ODT Green Titration KitLamictal Starter Kit (Blue)
+"GeneralDescriptions" : 
 Lamotrigine is an anticonvulsant that is used alone or in combination with other medications to treat seizures in adults and children who are at least 2 years old. Lamotrigine is also used as maintenance treatment for bipolar I disorder.
-Side Effects: DizzinessHeadachesWeight gainNauseaInsomniaProblems concentrating
-
-Generic Name: Sertraline
-Brand Names:ZoloftApo-SertralineLustralSertraSertralElevaAltrulineXydepMylan-SertralineDaxidGlademSerdepSerlifeSetraTolrest
-General Description: 
+"SideEffectsList" : "Dizziness", "Headaches", "Weight gain", "Nausea", "Insomnia", "Problems concentrating", 
+},
+{ 
+"GenericName" : "Sertraline"
+"BrandName" : ZoloftApo-SertralineLustralSertraSertralElevaAltrulineXydepMylan-SertralineDaxidGlademSerdepSerlifeSetraTolrest
+"GeneralDescriptions" : 
 Sertraline, a selective serotonin reuptake inhibitor (SSRI) antidepressant, is used in the treatment of major depression, obsessive-compulsive disorder, panic disorder, post-traumatic stress disorder, premenstrual dysphoric disorder, and social anxiety disorder.
-Side Effects: Weight gainDry mouthSex drive (libido) decreasedLoss of sex drive (libido)FatigueInsomnia
-
-Generic Name: Alprazolam
-Brand Names:XanaxXanax XRAlprazolam XRAlprazolAdco-alzamNiravamAlzamAlpraxFrontàlNeurolZopaxAlzolamTrankimazinXanor SRHelexTafilXanagisZolamZomiren
-General Description: 
+"SideEffectsList" : "Weight gain", "Dry mouth", "Sex drive (libido) decreased", "Loss of sex drive (libido)", "Fatigue", "Insomnia", 
+},
+{ 
+"GenericName" : "Alprazolam"
+"BrandName" : XanaxXanax XRAlprazolam XRAlprazolAdco-alzamNiravamAlzamAlpraxFrontàlNeurolZopaxAlzolamTrankimazinXanor SRHelexTafilXanagisZolamZomiren
+"GeneralDescriptions" : 
 Alprazolam is a benzodiazepine used for the treatment of anxiety disorder, panic disorder, with or without agoraphobia, and anxiety associated with depression. It may also be used to treat anxiety in children.
-Side Effects: SleepinessDrowsinessSedationProblems concentratingFatigueMemory problems
-
-Generic Name: Amitriptyline
-Brand Names:ElavilEndepTrepilineApo-amitriptylineSarotenLaroxylTryptizolSarotexAmineurinAmitriptyline TrocheTryptanolAnapsiqueElatrolRedomex
-General Description: 
+"SideEffectsList" : "Sleepiness", "Drowsiness", "Sedation", "Problems concentrating", "Fatigue", "Memory problems", 
+},
+{ 
+"GenericName" : "Amitriptyline"
+"BrandName" : ElavilEndepTrepilineApo-amitriptylineSarotenLaroxylTryptizolSarotexAmineurinAmitriptyline TrocheTryptanolAnapsiqueElatrolRedomex
+"GeneralDescriptions" : 
 Amitriptyline is a tricyclic antidepressant approved for the treatment of depression. Off label amitripyline is used for certain chronic and neuropathic (nerve) pain and for prevention of migraine headaches.
-Side Effects: Dry mouthWeight gainDrowsinessSleepinessExcessive daytime sleepiness (somnolence)Grogginess
-
-Generic Name: Venlafaxine
-Brand Names:Effexor XREffexorVenlafaxine XRVenlor XRVenlalic XLNovo-Venlafaxine XRViepaxPMS-Venlafaxine XRViePax XLPracetZarelisOdven SBK
-General Description: 
+"SideEffectsList" : "Dry mouth", "Weight gain", "Drowsiness", "Sleepiness", "Excessive daytime sleepiness (somnolence)", "Grogginess", 
+},
+{ 
+"GenericName" : "Venlafaxine"
+"BrandName" : Effexor XREffexorVenlafaxine XRVenlor XRVenlalic XLNovo-Venlafaxine XRViepaxPMS-Venlafaxine XRViePax XLPracetZarelisOdven SBK
+"GeneralDescriptions" : 
 Venlafaxine is an antidepressant in a group of drugs called selective serotonin and norepinephrine reuptake inhibitors (SSNRIs). It affects chemicals in the brain that may become unbalanced and cause depression. It is used to treat major depressive disorder, anxiety, and panic disorder.
-Side Effects: Weight gainDry mouthNauseaBrain zapsSex drive (libido) decreasedDrowsiness
-
-Generic Name: Prednisone
-Brand Names:DeltasonePrednisone IntensolEncortonCortancylPanafcortPronizonPulmisonRayos
-General Description: 
+"SideEffectsList" : "Weight gain", "Dry mouth", "Nausea", "Brain zaps", "Sex drive (libido) decreased", "Drowsiness", 
+},
+{ 
+"GenericName" : "Prednisone"
+"BrandName" : DeltasonePrednisone IntensolEncortonCortancylPanafcortPronizonPulmisonRayos
+"GeneralDescriptions" : 
 Prednisone is a synthetic corticosteroid drug that decreases inflammation and suppresses the immune system.  It is used for many purposes including relapses in MS, for rheumatic disorders, neoplasms, and collagen diseases. Prednisone is activated by the liver into prednisolone.
-Side Effects: Weight gainIncreased appetiteInsomniaMood swingsMoon faceElevated blood sugar (hyperglycemia)
-
-Generic Name: Fluoxetine
-Brand Names:ProzacLovanFluxeneZactinLorienSalipaxSeronilFlunilGerozacLadoseMoltobenNopresNuzakProzac WeeklySarafemTuneluzActanVerotina
-General Description: 
-Fluoxetine is a selective serotonin reuptake inhibitor (SSRI) antidepressant. It is used to treat major depressive disorder, moderate to severe bulimia nervosa, obsessive compulsive and panic disorders. It may also be used for selective mutism and dementia related agitation.
-Side Effects: Sexual dysfunctionNauseaWeight gainSex drive (libido) decreasedEmotional numbness or flatnessAnxious mood
-
-Generic Name: Carbidopa-Levodopa
-Brand Names:SinemetCarbidopa-Levodopa 25-100Sinemet 25/100ParcopaCarbidopa-Levodopa 25-250Sinemet ER 50/200Sinemet PlusSinemet 25/250Apo-LevocarbCarbidopa-Levidopa ODTCarbilev 25/250Sinemet Depot Mite 25/100Sinemet 12.5/50DuoDopaLevocarbSyndopaDuopaCaramet CRCo-careldopaSinemet Depot 50/200DopicarKinsonParkidopaCarbidopa-Levodopa Intestinal GelTidomet
-General Description: 
-Levodopa is a dopamine precursor used to treat the movement disorder symptoms of Parkinson's disease. Carbidopa is often included with levodopa-containing drugs in order to boost its efficacy by slowing down the metabolism of dopamine. 
-Side Effects: Jerky movements (dyskinesia)NauseaDrowsinessConstipationUpset stomachHeadaches
-
-Generic Name: Hydrocodone-Acetaminophen
-Brand Names:NorcoVicodinLortabVicodin ESLorcet 10/650Vicodin HPXodol 7.5/300Lorcet PlusZydoneAnexsiaCo-GesicStagesic
-General Description: 
-Hydrocodone is an opiate pain medication used in the relief of moderate to severe pain. Acetaminophen (also known as APAP and paracetamol) is typically used for management of mild to moderate pain; when in combination, it increases the effect of hydrocodone.
-Side Effects: ConstipationDrowsinessNauseaSleepinessDizzinessBrain fog
-
-Generic Name: Citalopram
-Brand Names:CelexaCipramilAPO-CitalopramCitopamCiliftNovo-CitalopramDr. Reddy's Lab CitalopramCitalecCo-CitalopramSeropramTalohexalCitabaxDepramilMylan-CitalopramRan-CitaloTalomilAlcytanRiva-Citalopram
-General Description: 
-Citalopram hydrobromide (HBr) is an antidepressant in a group of drugs called selective serotonin reuptake inhibitors (SSRIs). Citalopram affects chemicals in the brain that may become unbalanced and cause depression. It is used in the treatment of depression.
-Side Effects: Sex drive (libido) decreasedFatigueWeight gainNauseaDry mouthAnxious mood
-
-Generic Name: Metformin
-Brand Names:GlucophageMetformin ERDiabexGlucophage XRGlumetzaApo-MetforminGlucophage SRPMS-MetforminRatio-MetforminDiaforminGlyconFortametRiometMerckformin XRStagidCetapin
-General Description: 
-Metformin an antidiabetic agent used for the management of type 2 diabetes mellitus (noninsulin dependent, NIDDM) as monotherapy when hyperglycemia (high blood sugar) cannot be managed with diet and exercise alone.
-Side Effects: DiarrheaNauseaStomach painUpset stomachLoose bowel movementsLow blood sugar (hypoglycemia)
-
-Generic Name: Cyclobenzaprine
-Brand Names:FlexerilAmrixAPO-CyclobenzaprinePMS-CyclobenzaprineFexmidCyclpenMiosanTensodox
-General Description: 
-Cyclobenzaprine is a centrally-acting skeletal muscle relaxant used in the treatment of muscle spasm associated with acute painful musculoskeletal conditions.
-Side Effects: DrowsinessDry mouthSleepinessHangover effectFatigueConstipation
-
-Generic Name: Hydroxychloroquine
-Brand Names:PlaquenilHydroxychlorApo-hydroxyquineQuensylDolquineOxiklorin
-General Description: 
-Hydroxychloroquine is an antimalarial, used for the treatment of malaria. It may also be used to manage discoid or systemic lupus erythematosus and rheumatoid arthritis.
-Side Effects: NauseaDiarrheaBlurry visionHeadachesStomach painUpset stomach
-
-Generic Name: Topiramate
-Brand Names:TopamaxTopamax SprinkleTrokendi XRToprelTopictalQudexy XRTopamac
-General Description: 
-Topiramate is an anti-convulsant and is used with other medications to treat certain types of seizures in patients with epilepsy or Lennox-Gastaut syndrome.  It is also used to prevent migraine or cluster headaches.
-Side Effects: Weight lossBrain fogHands tinglingMemory problemsWord fishingFeet tingling
-
-Generic Name: Zolpidem
-Brand Names:AmbienAmbien CRZolpidem ERStilnoxStilnoctSublinox sublingualEdluarHypnogenIntermezzoIvedalNimadormStildemStilnox CRZolpihexalSomnil
-General Description: 
-Zolpidem tartrate is a sedative-hypnotic drug that is used for short-term treatment of insomnia that presents as difficulty of sleep onset and maintenance of sleep.
-Side Effects: AmnesiaGrogginessGroggy in morningSleep eatingSleep WalkingDrowsy in a.m.
-
-Generic Name: Trazodone
-Brand Names:DesyrelApo-TrazodoneMolipaxinMylan-TrazodoneDepraxTrazodon HEXALTrazodone liquidTritticopms-TrazodoneDonarenTrazolan
-General Description: 
-Trazodone is an antidepressant used primarily to treat depression. It may also be used for relief of an anxiety disorder (e.g., sleeplessness, tension), or chronic pain.
-Side Effects: Dry mouthDrowsinessHangover effectDifficulty waking upGroggy in morningHeadaches
-
-Generic Name: Escitalopram
-Brand Names:LexaproCipralexLexamilEsipramLoxalateSeroplexEsopramZytomilEs PramcitPramatis
-General Description: 
-Escitalopram is an antidepressant in a group of drugs called selective serotonin reuptake inhibitors (SSRIs).  It is primarily used to treat anxiety and major depressive disorder. It may also be used for mild agitation in patients with dementia.
-Side Effects: Sex drive (libido) decreasedWeight gainFatigueApathyBrain fogInsomnia
-
-Generic Name: Lorazepam
-Brand Names:AtivanAPO-LorazepamAtivan SLTavorSandoz LorazepamTranquipamLoreninLorafenTemestaOrfidal
-General Description: 
-Lorazepam is a benzodiazepine used in the treatment of anxiety disorders. It is used intravenously for status epilepticus. It may also be used for alcohol detoxification, insomnia, partial complex seizures, agitation, and as part of antiemetic treatment.
-Side Effects: DrowsinessSleepinessSedationFatigueDizzinessTiredness
-
-Generic Name: Omeprazole
-Brand Names:PrilosecOmeprazole CR/DROmeprazole DROmeprazole OTCLosecOmeprazole ECOmepralOmezEquate Omeprazole OTCAltosecAcimaxBuscasanBuscogastBuscozolGastrolocMopralPolprazol
-General Description: 
-Omeprazole decreases the amount of acid produced in the stomach. It is used to treat duodenal and gastric ulcer disease, gastroesophageal reflux disease (GERD) and Zollinger-Ellison syndrome, a hypersecretory condition. OTC preparations are used for frequent, uncomplicated heartburn.
-Side Effects: Acid refluxBurpingDry mouthStomach painAbdominal bloatingFlatulence
-
-Generic Name: Albuterol
-Brand Names:Albuterol InhalerProAir HFAVentolin HFAAlbuterol NebulizerSalbutamolProventil HFAProventilVentolin AccuhalerVoSpire ERAsmol InhalerAPO-Salvent CFC FreeAsthaventRespigenSultanolProair RespiClickVospire
-General Description: 
-Albuterol relaxes the smooth muscle in the lung and dilates airways to improve breathing. It is used in the treatment of asthma, chronic bronchitis, and emphysema. The inhaler enables the drug to reach deep into the lungs for maximum benefit.  The international generic name is Salbutamol.
-Side Effects: Jittery feelingShakinessHeart rate increasedTachycardia (fast heart rate)Heart palpitationsDry mouth
-
-Generic Name: Interferon beta-1a SubQ injection
-Brand Names:RebifRebif Rebidose
-General Description: 
-Interferon beta-1a is an immunomodulator used to prevent episodes of symptoms and slow the development of disability in patients with relapsing-remitting multiple sclerosis.  It comes as a solution to inject subcutaneously (under the skin) three times a week, ideally the same 3 days each week.
-Side Effects: Injection site rednessHeadachesFlu like symptomsMuscle achesFever/chillsInjection site pain
+"SideEffectsList" : "Weight gain", "Increased appetite", "Insomnia", "Mood swings", 

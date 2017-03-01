@@ -20,27 +20,27 @@ def getDrugData(url):
 
     # finds generic drug name
     genericName = soup.h1.span.string
-    f.write("\nGeneric Name: " + genericName + "\n")
+    f.write("\n{ \n\"GenericName\" : \"" + genericName + "\"\n")
 
     # finds common brands
     brandNames = soup.find("span", {"class":"comma-separated"})
     brandName = brandNames.find_all('a')
-    f.write("Brand Names:")
+    f.write("\"BrandName\" : ")
     for brand in brandNames:
-        f.write(brand.string.rstrip().encode('utf-8'),) #rstrip removes all new lines \n
+        f.write(brand.string.rstrip().encode('utf-8')) #rstrip removes all new lines \n
 
     # finds drug description
     desc = soup.find("p",{"itemprop":"description"})
-    f.write("\nGeneral Description: " + desc.string.encode('utf-8'))
+    f.write("\n\"GeneralDescriptions\" : " + desc.string.encode('utf-8'))
 
     # finds side effects of taking drug
     sideEffects = soup.find_all("tr", {"data-yah-key":"side_effect"})
-    f.write("Side Effects: ")
+    f.write("\"SideEffectsList\" : ")
 
     for sideEffect in sideEffects:
         lis = sideEffect.find("span", {"itemprop":"name"})
-        f.write(lis.string.encode('utf-8'))
-    f.write("\n")
+        f.write("\"" + lis.string.encode('utf-8') + "\", ")
+    f.write("\n},")
 
     # below are not implemented
     # RecommendedDosage TBD
