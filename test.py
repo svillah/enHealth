@@ -24,7 +24,6 @@ def getDrugData(url):
 
     # finds common brands
     brandNames = soup.find("span", {"class":"comma-separated"})
-<<<<<<< HEAD
     f.write("Brand Names:")
     if(brandNames is None):
         f.write("None Available")
@@ -32,12 +31,6 @@ def getDrugData(url):
         brandNames = brandNames.find_all('a')
         for brand in brandNames:
             f.write(brand.string.rstrip().encode('utf-8')) #rstrip removes all new lines \n
-=======
-    brandName = brandNames.find_all('a')
-    f.write("\"BrandName\" : ")
-    for brand in brandNames:
-        f.write(brand.string.rstrip().encode('utf-8')) #rstrip removes all new lines \n
->>>>>>> 42854a029dbb0fe3f52a88681c2680249fef0fb9
 
     # finds drug description
     desc = soup.find("p",{"itemprop":"description"})
