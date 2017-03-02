@@ -24,10 +24,13 @@ def getDrugData(url):
 
     # finds common brands
     brandNames = soup.find("span", {"class":"comma-separated"})
-    brandName = brandNames.find_all('a')
     f.write("Brand Names:")
-    for brand in brandNames:
-        f.write(brand.string.rstrip().encode('utf-8'),) #rstrip removes all new lines \n
+    if(brandNames is None):
+        f.write("None Available")
+    else:
+        brandNames = brandNames.find_all('a')
+        for brand in brandNames:
+            f.write(brand.string.rstrip().encode('utf-8')) #rstrip removes all new lines \n
 
     # finds drug description
     desc = soup.find("p",{"itemprop":"description"})
@@ -59,18 +62,42 @@ def getDrugData(url):
 
     # Source
 
-# get URLs of all drugs, note that this is only page one
 website = "https://www.patientslikeme.com/treatments/browse?cat=1"
 soup = initializeSoup(website)
-drugTable = soup.find("table", {"id":"tbl-treatments"})
-drugs = drugTable.findChildren('tr')
-
-for i in range(1, len(drugs)):
-#for i in range(1, 3): # use code above for actual implementation, current for test
-    for drugUrl in drugs[i].findChildren("a"):
-        url = drugUrl.get("href")
-        fullUrl = "https://www.patientslikeme.com" + url
-        # go to URL for each drug and obtain info
-        getDrugData(fullUrl)
-
+#button for next page
+disabled = soup.find("a", {"class":"button icon-only is-not-rwd next_page",
+                           "disabled":"true"})
+#checks to see if there is only one page
+if(disabled is not None):
+    drugTable = soup.find("table", {"id":"tbl-treatments"})
+    drugs = drugTable.findChildren('tr')
+    #iterate through each drug on the page
+    for i in range(1, len(drugs)):
+    #for i in range(1, 3): # use code above for actual implementation, current for test
+        for drugUrl in drugs[i].findChildren("a"):
+            url = drugUrl.get("href")
+            fullUrl = "https://www.patientslikeme.com" + url
+            # go to URL for each drug and obtain info
+            getDrugData(fullUrl)
+else:
+    #loop iterates through each page until it reaches the last page
+    pageNum = 1
+    while(disabled is None):
+        # get URLs of all drugs
+        website = "https://www.patientslikeme.com/treatments/browse?cat=1&page=" + str(pageNum).encode('utf-8')
+        soup = initializeSoup(website)
+        drugTable = soup.find("table", {"id":"tbl-treatments"})
+        drugs = drugTable.findChildren('tr')
+        disabled = soup.find("a", {"class":"button icon-only is-not-rwd next_page",
+                               "disabled":"true"})    
+        #iterate through each drug on the page
+        for i in range(1, len(drugs)):
+        #for i in range(1, 3): # use code above for actual implementation, current for test
+            for drugUrl in drugs[i].findChildren("a"):
+                url = drugUrl.get("href")
+                fullUrl = "https://www.patientslikeme.com" + url
+                # go to URL for each drug and obtain info
+                getDrugData(fullUrl)
+        pageNum += 1
+#end program
 f.close()
