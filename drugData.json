@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 Generic Name: Gabapentin
 Brand Names:NeurontinGabatinGraliseRatio-GabapentinAPO-GabapentinDOM-GabapentinNupentinEpleptinPMS-GabapentinGabaran
@@ -12506,3 +12507,110 @@ Brand Names:Zostavax
 General Description: 
 Zoster vaccine (live) is given by injection that is used for adults 50 years of age or older to prevent shingles. It cannot be used to treat shingles, or the nerve pain that may follow shingles, once you have it.
 Side Effects: 
+=======
+﻿
+{ 
+"GenericName" : "Gabapentin"
+"BrandName" : NeurontinGabatinGraliseRatio-GabapentinAPO-GabapentinDOM-GabapentinNupentinEpleptinPMS-GabapentinGabaran
+"GeneralDescriptions" : 
+Gabapentin is an anticonvulsant medication used as an adjunct treatment for partial seizures and for the management of postherpetic neuralgia and neuropathic pain.
+"SideEffectsList" : "Weight gain", "Fatigue", "Sleepiness", "Drowsiness", "Dizziness", "Brain fog", 
+},
+{ 
+"GenericName" : "Duloxetine"
+"BrandName" : CymbaltaCymgenYentreveYelate
+"GeneralDescriptions" : 
+Duloxetine is a selective serotonin and norepinephrine reuptake inhibitor (SSNRI). It may be used for depression, general anxiety disorder, pain associated with diabetic neuropathy and fibromyalgia.
+"SideEffectsList" : "Nausea", "Weight gain", "Dizziness", "Sex drive (libido) decreased", "Dry mouth", "Sweating increased", 
+},
+{ 
+"GenericName" : "Pregabalin"
+"BrandName" : LyricaMaxgalinProvelyn
+"GeneralDescriptions" : 
+Pregabalin is an analgesic and anti-convulsant drug that may be used to manage pain associated with diabetic peripheral neuropathy, postherpetic (shingles) neuralgia, or as an adjunctive treatment for partial-onset seizure disorder in adults and for the management of fibromyalgia.
+"SideEffectsList" : "Weight gain", "Dizziness", "Brain fog", "Fatigue", "Blurry vision", "Problems concentrating", 
+},
+{ 
+"GenericName" : "Baclofen"
+"BrandName" : Mylan-BaclofenDOM-BaclofenStelaxGabalonMiorelOnelaxant RSpinaxBacloparKemstro
+"GeneralDescriptions" : 
+Baclofen is a skeletal muscle relaxant and anti-spastic agent used for the treatment of reversible spasticity associated with multiple sclerosis or spinal cord lesions.
+"SideEffectsList" : "Fatigue", "Sleepiness", "Drowsiness", "Muscle weakness", "Dry mouth", "Constipation", 
+},
+{ 
+"GenericName" : "Clonazepam"
+"BrandName" : KlonopinRivotrilPMS-ClonazepamAPO ClonazepamClonexKlonopin WaferPaxamRivotril dropsDOM-ClonazepamClonotril
+"GeneralDescriptions" : 
+Clonazepam, a benzodiazepine, is used alone or as an adjunct in the treatment of seizure disorders and for panic disorders. It may also be used for restless leg syndrome, neuralgia, multifocal tic disorder, parkinsonian dysarthria, bipolar disorder and as an adjunct in treatment of schizophrenia.
+"SideEffectsList" : "Drowsiness", "Sleepiness", "Groggy in morning", "Fatigue", "Excessive daytime sleepiness (somnolence)", "Sedation", 
+},
+{ 
+"GenericName" : "Levothyroxine"
+"BrandName" : SynthroidLevoxylThyroxineLevothroidL-ThyroxineEltroxinEuthyroxTirosintLannett LevothyroxineEutiroxUnithroidOroxineThyraxLetroxThyronormProthyrid
+"GeneralDescriptions" : 
+Levothyroxine is a synthetic form of the human hormone thyroxine. The drug is used to treat hypothyroidism (underactive thyroid), which can lead to weight gain, depression, and pain. 
+"SideEffectsList" : "Fatigue", "Hair loss", "Weight gain", "Headaches", "Heart palpitations", "Nausea", 
+},
+{ 
+"GenericName" : "Glatiramer acetate"
+"BrandName" : CopaxoneGlatopa
+"GeneralDescriptions" : 
+Glatiramer acetate combines four amino acids including L-alanine, L-glutamic acid, L-lysine and L-tyrosine. It is used for Relapsing-Remitting Multiple Sclerosis (RRMS) to reduce the frequency and severity of relapses. It is administered as a subcutaneous injection.
+"SideEffectsList" : "Injection site reaction", "Injection site pain", "Injection site itching", "Lumps and bumps", "Redness", "Bruising", 
+},
+{ 
+"GenericName" : "Tramadol"
+"BrandName" : UltramTramadol ERUltram ERTramadol SRTriduralZydolTramal SRRaliviaRyzoltTramadinZytram XLZydol SRTramahexal SRZamadol SRDololDolzamTramazacTramiumConzipDurellaMabronMandolginTradorec XLTramulief SRXydolMaxitram SR
+"GeneralDescriptions" : 
+Tramadol is an opioid analgesic used for the relief of moderate to moderately-severe pain. Extended release formulations are indicated for patients requiring around-the-clock management of moderate to moderately-severe pain for an extended period of time.
+"SideEffectsList" : "Constipation", "Nausea", "Drowsiness", "Dry mouth", "Dizziness", "Fatigue", 
+},
+{ 
+"GenericName" : "Bupropion"
+"BrandName" : Wellbutrin XLWellbutrinWellbutrin SRBupropion XLBupropion SRBudeprion XLBudeprion SRAplenzinZybanVoxraElontrilForfivo XLZetronNovo-Bupropion
+"GeneralDescriptions" : 
+Bupropion, a norepinephrine and dopamine reuptake inhibitor (NDRI) antidepressant is used for the treatment of major depressive disorder, including seasonal affective disorder, and as an adjunct in smoking cessation. It may also be used for attention-deficit/hyperactivity and bipolar disorders. 
+"SideEffectsList" : "Dry mouth", "Anxious mood", "Weight gain", "Insomnia", "Headaches", "Constipation", 
+},
+{ 
+"GenericName" : "Lamotrigine"
+"BrandName" : LamictalLamictal XRLamictal BlueApo-LamotrigineLamictal OrangeEpitecLamictinLamictal ODTLamictal Starter Kit (Orange)LamitorLamezLamictal GreenLamictal ODT Orange Titration KitLamogineLamolepLamotrigine XRLamictal ODT Blue Titration KitLamictal ODT Green Titration KitLamictal Starter Kit (Blue)
+"GeneralDescriptions" : 
+Lamotrigine is an anticonvulsant that is used alone or in combination with other medications to treat seizures in adults and children who are at least 2 years old. Lamotrigine is also used as maintenance treatment for bipolar I disorder.
+"SideEffectsList" : "Dizziness", "Headaches", "Weight gain", "Nausea", "Insomnia", "Problems concentrating", 
+},
+{ 
+"GenericName" : "Sertraline"
+"BrandName" : ZoloftApo-SertralineLustralSertraSertralElevaAltrulineXydepMylan-SertralineDaxidGlademSerdepSerlifeSetraTolrest
+"GeneralDescriptions" : 
+Sertraline, a selective serotonin reuptake inhibitor (SSRI) antidepressant, is used in the treatment of major depression, obsessive-compulsive disorder, panic disorder, post-traumatic stress disorder, premenstrual dysphoric disorder, and social anxiety disorder.
+"SideEffectsList" : "Weight gain", "Dry mouth", "Sex drive (libido) decreased", "Loss of sex drive (libido)", "Fatigue", "Insomnia", 
+},
+{ 
+"GenericName" : "Alprazolam"
+"BrandName" : XanaxXanax XRAlprazolam XRAlprazolAdco-alzamNiravamAlzamAlpraxFrontàlNeurolZopaxAlzolamTrankimazinXanor SRHelexTafilXanagisZolamZomiren
+"GeneralDescriptions" : 
+Alprazolam is a benzodiazepine used for the treatment of anxiety disorder, panic disorder, with or without agoraphobia, and anxiety associated with depression. It may also be used to treat anxiety in children.
+"SideEffectsList" : "Sleepiness", "Drowsiness", "Sedation", "Problems concentrating", "Fatigue", "Memory problems", 
+},
+{ 
+"GenericName" : "Amitriptyline"
+"BrandName" : ElavilEndepTrepilineApo-amitriptylineSarotenLaroxylTryptizolSarotexAmineurinAmitriptyline TrocheTryptanolAnapsiqueElatrolRedomex
+"GeneralDescriptions" : 
+Amitriptyline is a tricyclic antidepressant approved for the treatment of depression. Off label amitripyline is used for certain chronic and neuropathic (nerve) pain and for prevention of migraine headaches.
+"SideEffectsList" : "Dry mouth", "Weight gain", "Drowsiness", "Sleepiness", "Excessive daytime sleepiness (somnolence)", "Grogginess", 
+},
+{ 
+"GenericName" : "Venlafaxine"
+"BrandName" : Effexor XREffexorVenlafaxine XRVenlor XRVenlalic XLNovo-Venlafaxine XRViepaxPMS-Venlafaxine XRViePax XLPracetZarelisOdven SBK
+"GeneralDescriptions" : 
+Venlafaxine is an antidepressant in a group of drugs called selective serotonin and norepinephrine reuptake inhibitors (SSNRIs). It affects chemicals in the brain that may become unbalanced and cause depression. It is used to treat major depressive disorder, anxiety, and panic disorder.
+"SideEffectsList" : "Weight gain", "Dry mouth", "Nausea", "Brain zaps", "Sex drive (libido) decreased", "Drowsiness", 
+},
+{ 
+"GenericName" : "Prednisone"
+"BrandName" : DeltasonePrednisone IntensolEncortonCortancylPanafcortPronizonPulmisonRayos
+"GeneralDescriptions" : 
+Prednisone is a synthetic corticosteroid drug that decreases inflammation and suppresses the immune system.  It is used for many purposes including relapses in MS, for rheumatic disorders, neoplasms, and collagen diseases. Prednisone is activated by the liver into prednisolone.
+"SideEffectsList" : "Weight gain", "Increased appetite", "Insomnia", "Mood swings", 
+>>>>>>> 42854a029dbb0fe3f52a88681c2680249fef0fb9
