@@ -3,47 +3,37 @@ import json
 import requests
 from bs4 import BeautifulSoup
 
-f = open('drugData.json', 'w+')
-
 def initializeSoup(url):
     request = requests.get(url)
     soup = BeautifulSoup(request.text, 'html.parser')
     return soup
 
-def getDrugData(url):
-    website = url
-    soup = initializeSoup(website)
+def getGenericName(soup):
+    genericName = soup.h1.span.string.encode('utf-8')
+    return genericName
 
-    # removes js and css
-    for script in soup(["script", "style"]):
-        script.extract()
-
-    # finds generic drug name
-    genericName = soup.h1.span.string
-    f.write("\n{ \n\"GenericName\" : \"" + genericName + "\"\n")
-
-    # finds common brands
+def getBrandName(soup):
     brandNames = soup.find("span", {"class":"comma-separated"})
-    f.write("Brand Names:")
+    bn = []
     if(brandNames is None):
-        f.write("None Available")
+        return ("None Available")
     else:
         brandNames = brandNames.find_all('a')
         for brand in brandNames:
-            f.write(brand.string.rstrip().encode('utf-8')) #rstrip removes all new lines \n
-
-    # finds drug description
+            bn.append(brand.string.rstrip().encode('utf-8'))
+        return bn
+            
+def getDescription(soup):
     desc = soup.find("p",{"itemprop":"description"})
-    f.write("\n\"GeneralDescriptions\" : " + desc.string.encode('utf-8'))
+    return desc.string.rstrip().encode('utf-8')
 
-    # finds side effects of taking drug
+def sideEffects(soup):
     sideEffects = soup.find_all("tr", {"data-yah-key":"side_effect"})
-    f.write("\"SideEffectsList\" : ")
-
+    se = []
     for sideEffect in sideEffects:
         lis = sideEffect.find("span", {"itemprop":"name"})
-        f.write("\"" + lis.string.encode('utf-8') + "\", ")
-    f.write("\n},")
+        se.append(lis.string.encode('utf-8'))
+    return se
 
     # below are not implemented
     # RecommendedDosage TBD
@@ -62,42 +52,39 @@ def getDrugData(url):
 
     # Source
 
+def getDrugData(url, f):
+    website = url
+    soup = initializeSoup(website)
+
+    # removes js and css
+    for script in soup(["script", "style"]):
+        script.extract()
+
+    # initialize dictionary 
+    data = {}
+    data["GenericName"] = getGenericName(soup)
+    data["BrandName"] = getBrandName(soup)
+    data["GeneralDescriptions"] = getDescription(soup)
+    data["SideEffects"] = sideEffects(soup)
+
+    # writes dictionary to json
+    json.dump(data, f, indent=4)
+
+# get URLs of all drugs, note that this is only page one
 website = "https://www.patientslikeme.com/treatments/browse?cat=1"
 soup = initializeSoup(website)
-#button for next page
-disabled = soup.find("a", {"class":"button icon-only is-not-rwd next_page",
-                           "disabled":"true"})
-#checks to see if there is only one page
-if(disabled is not None):
-    drugTable = soup.find("table", {"id":"tbl-treatments"})
-    drugs = drugTable.findChildren('tr')
-    #iterate through each drug on the page
-    for i in range(1, len(drugs)):
-    #for i in range(1, 3): # use code above for actual implementation, current for test
-        for drugUrl in drugs[i].findChildren("a"):
-            url = drugUrl.get("href")
-            fullUrl = "https://www.patientslikeme.com" + url
-            # go to URL for each drug and obtain info
-            getDrugData(fullUrl)
-else:
-    #loop iterates through each page until it reaches the last page
-    pageNum = 1
-    while(disabled is None):
-        # get URLs of all drugs
-        website = "https://www.patientslikeme.com/treatments/browse?cat=1&page=" + str(pageNum).encode('utf-8')
-        soup = initializeSoup(website)
-        drugTable = soup.find("table", {"id":"tbl-treatments"})
-        drugs = drugTable.findChildren('tr')
-        disabled = soup.find("a", {"class":"button icon-only is-not-rwd next_page",
-                               "disabled":"true"})    
-        #iterate through each drug on the page
-        for i in range(1, len(drugs)):
-        #for i in range(1, 3): # use code above for actual implementation, current for test
-            for drugUrl in drugs[i].findChildren("a"):
-                url = drugUrl.get("href")
-                fullUrl = "https://www.patientslikeme.com" + url
-                # go to URL for each drug and obtain info
-                getDrugData(fullUrl)
-        pageNum += 1
-#end program
+drugTable = soup.find("table", {"id":"tbl-treatments"})
+drugs = drugTable.findChildren('tr')
+f = open('drugData.json', 'w')
+
+# for i in range(1, len(drugs)):
+for i in range(1,7):
+    for drugUrl in drugs[i].findChildren("a"):
+        url = drugUrl.get("href")
+        fullUrl = "https://www.patientslikeme.com" + url
+        # go to URL for each drug and obtain info
+        getDrugData(fullUrl, f)
+
 f.close()
+
+
