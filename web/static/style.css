@@ -1,0 +1,16 @@
+html {
+  background-color: #fff;
+}
+
+form {
+  width: 100%;
+}
+
+h1 {
+  color: darkgreen;
+}
+
+p {
+  color: red;
+  line-height: 1.5em;
+}
